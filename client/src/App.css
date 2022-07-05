@@ -1,0 +1,15 @@
+.slide-arrow{
+    width: 50px !important;
+    height: 50px !important;
+    color: white !important;
+    background-color: rgb(94, 86, 76);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    margin: auto;
+}
