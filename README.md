@@ -1,4 +1,4 @@
-# A Social Media Web-app.
+# A FULL-Stack Social Media Web-app.
 
 Stack;
   React.JS frontend.
