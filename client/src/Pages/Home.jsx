@@ -4,9 +4,7 @@ import { Navbar, Alert, Slider} from '../Components'
 const Home = () => {
   return (
     <div>
-          <Alert />
-          <Navbar />
-          <Slider />
+    Home
     </div>
   )
 }
