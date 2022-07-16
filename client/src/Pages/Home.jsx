@@ -1,10 +1,14 @@
 import React from 'react'
-import { Navbar, Alert, Slider} from '../Components'
+import { Routes, Route } from "react-router-dom";
+import { Welcome, Timeline } from '../Components'
 
 const Home = () => {
   return (
     <div>
-    Home
+          <Routes>
+                <Route path='/' element={ <Welcome />  }/>
+                <Route path='/timeline' element={ <Timeline />  }/>
+          </Routes>
     </div>
   )
 }
