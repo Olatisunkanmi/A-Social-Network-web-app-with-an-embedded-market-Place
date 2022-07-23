@@ -1,9 +1,13 @@
 import React from 'react';
+import { useState } from 'react';
 import {  Favorite, Menu, MessageOutlined, NotificationImportantOutlined, ShoppingCartOutlined } from '@material-ui/icons'
 import {Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
 const Header = () => {
+    const [sidebar, setSideBar] = useState(false)
+    console.log(sidebar);
+   
 
     const headerTitle = useLocation().pathname.split('/')[1]
   return (
@@ -15,17 +19,23 @@ const Header = () => {
                                 <div 
                                     className='flex flex-row p-5'>
 
-
-                                                <div 
-                                                className='hidden lg:block lg:w-1/5'>
+                                     
+                                        <>{sidebar ? console.log('true')
+                                            : <div className='lg:block lg:w-1/5'>
                                                     <p> Side bar </p>
                                             </div>
                 
+                                    }
+                                        </>
+                                              
                                                 <div  className='w-full lg:w-3/5  text-white justify-between flex flex-row'>
                                     
                                                                 <div 
                                                                     className='flex flex-row space-x-1 text-black items-center'>
+                                                            <button 
+                                                                onClick={() =>  setSideBar(  (prevSideBar) => !prevSideBar) }>
                                                                 <Menu />
+                                                                </button>
                                                                     <Link to='/timeline'>
                                                                     <p  
                                                                     className='text-2xl font-serif font-semibold cursor-pointer capitalize '>{headerTitle}</p>
