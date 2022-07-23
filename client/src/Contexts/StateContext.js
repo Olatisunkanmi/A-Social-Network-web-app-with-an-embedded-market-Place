@@ -17,7 +17,9 @@ export const ContextProvider = ( {  children } ) => {
    const value ={
     activeSidebar,
     setSideBar 
-   }
+            }
+
+
     return (
         <StateContext.Provider
             value={value}
