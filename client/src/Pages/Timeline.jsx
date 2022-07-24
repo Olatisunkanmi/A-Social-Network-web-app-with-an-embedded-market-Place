@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Upload } from '../Components';
+import { Header, Upload, Sidebar  } from '../Components';
 // import UserContext, {UserContext} from './Components/UserContext';
 
 
@@ -8,11 +8,10 @@ const Timeline = () => {
 
   return (
         <div 
-        className='bg-stone-200 '>
+        className='bg-stone-200 flex flex-col w-4/5'>
             <Header />
-
-         
-        </div>
+            <p> Hello </p>
+          </div>
   )
 }
 
