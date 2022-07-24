@@ -1,12 +1,12 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
-import { Welcome, Timeline } from '../Components'
+import { Welcome, Timeline, Sidebar } from '../Components'
 
 const Home = () => {
   return (
     <div>
+    <Sidebar />
           <Routes>
-                <Route path='/' element={ <Welcome />  }/>
                 <Route path='/timeline' element={ <Timeline />  }/>
           </Routes>
     </div>
