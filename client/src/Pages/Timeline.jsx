@@ -1,10 +1,7 @@
 import React from 'react';
 import { Header, Upload, Sidebar  } from '../Components';
-// import UserContext, {UserContext} from './Components/UserContext';
-
 
 const Timeline = () => {
-    // const [isAuth, setIsAuth] = UserContext(second)
 
   return (
         <div 
