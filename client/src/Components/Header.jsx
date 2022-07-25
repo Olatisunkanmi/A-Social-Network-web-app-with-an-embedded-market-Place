@@ -4,10 +4,12 @@ import {  Favorite, Menu, MessageOutlined, NotificationImportantOutlined, Shoppi
 import {Link } from 'react-router-dom';
 import { Sidebar } from './index'
 import { useLocation } from 'react-router-dom';
+import { useStateContext } from '../Contexts/Context';
+
 
 const Header = () => {
-    const [sidebar, setSideBar] = useState(false)
-    console.log(sidebar);
+  const { sideBar, setSideBar } =  useStateContext();
+  console.log(sideBar)
    
 
     const headerTitle = useLocation().pathname.split('/')[1]
@@ -17,7 +19,10 @@ const Header = () => {
             className='flex flex- row justify-between'>
                 <div 
                     className='flex flex-row w-1/5'>
-                    <Menu /> 
+                   <button onClick={() => setSideBar(
+                    (prevSideBar) => !prevSideBar )}>
+                   <Menu /> 
+                   </button>
                     <p> Timeline </p>
                 </div>
 
