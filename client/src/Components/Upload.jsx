@@ -14,7 +14,7 @@ const Upload = () => {
 
           
                   
-                          <div className='flex border-r-2  w-2/6 items-center justify-center 
+                          <div className='cursor-pointer flex border-r-2  w-2/6 items-center justify-center 
                           rounded-tr-lg
                           py-3'> 
                               <EditOutlined className='upload-icons' />
@@ -23,7 +23,7 @@ const Upload = () => {
                           </div>
              
                
-                          <div className='flex  w-2/6 
+                          <div className='cursor-pointer flex  w-2/6 
                             bg-stone-100
                           border-b-2 items-center
                            justify-center'> 
@@ -32,7 +32,7 @@ const Upload = () => {
                           </div>
              
                
-                          <div className='rounded-r-xl 
+                          <div className='cursor-pointer rounded-r-xl 
                           border-b-2 bg-stone-100
                           flex items-center flex-row   w-2/6 justify-center'> 
                               <Camera className='upload-icons'/>
@@ -43,9 +43,9 @@ const Upload = () => {
 
                     <div 
                       className='flex flex-row mt-4 '>
-                    <img src={img} alt=""  className='border-2 m-1 rounded-full h-10 w-10 object-cover'/>
+                    <img src={img} alt=""  className='border-2 m-1 border-black rounded-full h-10 w-10 object-cover'/>
                     <textarea 
-                      className='w-full textarea m-2 capitalize text-md'
+                      className='w-full textarea m-2 text-md'
                         placeholder='What is on your Mind ? '
                           rows='4'>
                                 
@@ -107,7 +107,7 @@ const Upload = () => {
                           bg-blue-500  cursor-pointer 
                           rounded-md text-white font-mono font-bold 
                             '>
-                            <button className=''>Post ! </button>
+                            <button className=''>Post</button>
                         </div>
 
 
