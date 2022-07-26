@@ -12,7 +12,7 @@ function App() {
     console.log(sideBar)
   return (
     <div 
-      className='bg-stone-200'>
+      className='bg-stone-100'>
     
       <div className='flex flex-row  justify-between'>
       {
