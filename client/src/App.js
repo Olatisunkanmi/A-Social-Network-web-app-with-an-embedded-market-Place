@@ -11,7 +11,8 @@ function App() {
   const { sideBar, setSideBar } = useStateContext();
     console.log(sideBar)
   return (
-    <div>
+    <div 
+      className='bg-stone-200'>
     
       <div className='flex flex-row  justify-between'>
       {
