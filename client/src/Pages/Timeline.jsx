@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Upload, Sidebar  } from '../Components';
+import { Header, Upload  } from '../Components';
 import { useStateContext } from '../Contexts/Context';
 import '../App.css'
 
@@ -8,10 +8,27 @@ const Timeline = () => {
   return (
         <div 
         className={` text-black flex flex-col p-20
+        md:w-full
         ${sideBar ? 'w-3/4 ' 
             : 'sidebar-toggle' }`}>
             <Header />
-            <p>  TIME LINE</p>
+            
+                  <div className=''>
+
+                          {/** Feed Section  */}
+                              <div 
+                                className='w-4/6'>
+                                  <Upload />
+                              </div>
+
+
+                          {/** Stories Section  */}
+
+
+                              <div className='w-2/5'>
+                              
+                              </div>
+                  </div>
           </div>
   )
 }
