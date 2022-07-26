@@ -24,7 +24,7 @@ const Upload = () => {
              
                
                           <div className='flex  w-2/6 
-                          
+                            bg-stone-100
                           border-b-2 items-center
                            justify-center'> 
                               <PhotoAlbumOutlined className='upload-icons'/>
@@ -32,7 +32,9 @@ const Upload = () => {
                           </div>
              
                
-                          <div className='rounded-r-xl border-b-2 flex items-center flex-row   w-2/6 justify-center'> 
+                          <div className='rounded-r-xl 
+                          border-b-2 bg-stone-100
+                          flex items-center flex-row   w-2/6 justify-center'> 
                               <Camera className='upload-icons'/>
                               <p className='font-mono font-bold '> Video  </p>
                           </div>
@@ -43,7 +45,7 @@ const Upload = () => {
                       className='flex flex-row mt-4 '>
                     <img src={img} alt=""  className='border-2 m-1 rounded-full h-10 w-10 object-cover'/>
                     <textarea 
-                      className='w-full textarea m-2'
+                      className='w-full textarea m-2 capitalize text-md'
                         placeholder='What is on your Mind ? '
                           rows='4'>
                                 
@@ -52,7 +54,9 @@ const Upload = () => {
 
 
               <div>
-                <h3>Updates </h3>
+                      <div>
+                          <p> Media </p>
+                        </div>
               </div>
     </div>
   )
