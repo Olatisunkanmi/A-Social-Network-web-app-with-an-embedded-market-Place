@@ -1,4 +1,4 @@
-import { Camera, EditOutlined, PhotoAlbumOutlined } from '@material-ui/icons'
+import { Camera, CameraAltOutlined, EditOutlined, LocalOfferOutlined, LocationOn, MoreHorizOutlined, PhotoAlbumOutlined, TagFaces } from '@material-ui/icons'
 import React from 'react'
 import img from '../Assests/pro.jpg'
 import '../App.css'
@@ -53,10 +53,64 @@ const Upload = () => {
                     </div>
 
 
-              <div>
-                      <div>
-                          <p> Media </p>
+              <div 
+                className='flex flex-row p-2  border-t-2 justify-between'>
+                      <div    className='flex flex-row space-x-2'>
+                                  <div className='flex 
+                                  flex-row items-center 
+                                  rounded-full bg-stone-200 
+                                  cursor-pointer p-2'>
+                                    <CameraAltOutlined className='media-icons' />
+                                      <p className='font-thin font-serif  ml-1' >  Media </p>
+                                    </div>
+            
+            
+                                    <div className='flex 
+                                    flex-row items-center 
+                                    rounded-full bg-stone-200 
+                                    cursor-pointer p-2'>
+                                      <TagFaces className='media-icons' />
+                                      <p className='font-thin font-serif  ml-1'> Activity </p>
+                                    </div>
+            
+                                    <div className='flex 
+                                    flex-row items-center 
+                                    rounded-full bg-stone-200 
+                                    cursor-pointer p-2'>
+                                      <LocationOn className='media-icons' />
+                                      <p className='font-thin font-serif  ml-1'> Location </p>
+                                    </div>
+            
+                                    <div className='flex 
+                                    flex-row items-center 
+                                    rounded-full bg-stone-200 
+                                    cursor-pointer p-2'>
+                                      <LocalOfferOutlined className='media-icons' />
+                                      <p className='font-thin font-serif  ml-1'> Tag Friends </p>
+                                    </div>
+            
+                                    <div className='flex 
+                                    flex-row items-center 
+                                    rounded-full bg-stone-200 
+                                    cursor-pointer p-2'>
+            
+                                      <MoreHorizOutlined />
+                                    </div>
+            
+            
+                      </div>
+
+
+                        <div 
+                          className='p-2 
+                          btn float-right 
+                          bg-blue-500  cursor-pointer 
+                          rounded-md text-white font-mono font-bold 
+                            '>
+                            <button className=''>Post ! </button>
                         </div>
+
+
               </div>
     </div>
   )
