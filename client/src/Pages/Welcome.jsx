@@ -1,11 +1,23 @@
 import React from 'react'
+import { Header } from '../Components'
+import '../App.css'
+import { useStateContext } from '../Contexts/Context';
+
+
+
 
 const Welcome = () => {
+  const { sideBar, setSideBar } =  useStateContext();
   return (
-    <div>
-              <h1 className='text-5xl font-bold text-red-700'> Welcome </h1>
-    </div>
+        <div 
+        className={` text-black flex flex-col p-20
+        ${sideBar ? 'w-3/4 ' 
+            : 'sidebar-toggle' }`}>
+            <Header />
+            <p>  TIME LINE</p>
+          </div>
   )
+  
 }
 
 export default Welcome
