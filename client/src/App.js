@@ -15,7 +15,8 @@ function App() {
     
       <div className='flex flex-row  justify-between'>
       {
-
+          sideBar ? <Sidebar />
+          : console.log('first')
       }
           <Routes>
             <Route exact path='/welcome' element={ <Welcome />} />
