@@ -11,10 +11,9 @@ function App() {
   const { sideBar, setSideBar } = useStateContext();
     console.log(sideBar)
   return (
-    <div 
-      className='bg-stone-100'>
-    
-      <div className='flex flex-row  justify-between'>
+   
+      <div className={`bg-stone-200 flex flex-row 
+      `}>
       {
           sideBar ? <Sidebar />
           : console.log('first')
@@ -24,7 +23,7 @@ function App() {
             <Route exact path='/friends' element={ <Welcome />} />
           </Routes>
       </div>
-    </div>
+   
   );
 }
 
