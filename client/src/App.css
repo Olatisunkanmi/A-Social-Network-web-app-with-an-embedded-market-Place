@@ -1,0 +1,13 @@
+.sidebar-toggle{
+    width: 80%;
+    margin: auto;
+    transition: width 2s;
+    
+}
+
+.sidebar{
+    box-shadow: 8px 2px 7px 0px rgba(0,0,0,0.41);
+-webkit-box-shadow: 8px 2px 7px 0px rgba(0,0,0,0.41);
+-moz-box-shadow: 8px 2px 7px 0px rgba(0,0,0,0.41);
+}
+
