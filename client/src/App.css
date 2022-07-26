@@ -1,7 +1,8 @@
-.sidebar-toggle{
-    width: 80%;
+
+.toggle{
+    width: 70%;
     margin: auto;
-    transition: width 2s;
+ 
     
 }
 
@@ -47,4 +48,18 @@
     -webkit-box-shadow: 8px 7px 0px -5px rgba(0,0,0,0.38);
     -moz-box-shadow: 8px 7px 0px -5px rgba(0,0,0,0.38);
 
+}
+
+.story{
+    box-shadow: 7px 0px 0px -4px rgba(0,0,0,0.38);
+-webkit-box-shadow: 7px 0px 0px -4px rgba(0,0,0,0.38);
+-moz-box-shadow: 7px 0px 0px -4px rgba(0,0,0,0.38);
+}
+
+.story-icon{
+    color: #555;
+}
+
+.story-icon:hover{
+    color:  blue;
 }
