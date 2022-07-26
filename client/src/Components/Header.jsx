@@ -9,10 +9,11 @@ import { useStateContext } from '../Contexts/Context';
 
 const Header = () => {
   const { sideBar, setSideBar } =  useStateContext();
-  console.log(sideBar)
+  // console.log(sideBar)
    
 
-    const headerTitle = useLocation().pathname.split('/')[1]
+    const pathHeader = useLocation().pathname.split('/')[1]
+    console.log(pathHeader);
   return (
     <>
     <div 
@@ -23,7 +24,8 @@ const Header = () => {
                     (prevSideBar) => !prevSideBar )}>
                    <Menu /> 
                    </button>
-                    <p> Timeline </p>
+                    <p
+                      className='text-2xl font-mono capitalize'> {pathHeader} </p>
                 </div>
 
 
