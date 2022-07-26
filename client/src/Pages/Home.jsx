@@ -5,14 +5,18 @@ import { useStateContext } from '../Contexts/Context';
 
 
 const Home = () => {
-      const { sidebar, setSideBar } =  useStateContext();
-        console.log(sidebar)
+      const { sideBar, setSideBar } =  useStateContext();
+  console.log(sideBar)
+        
+
+
 
   return (
     <div>
-    <Sidebar />
-          <Routes>
-                <Route path='/timeline' element={ <Timeline />  }/>
+            <Routes>
+                <Route path='/' element={ <Welcome />  }/>
+                <Route path='/settings' element={ <Timeline />  }/>
+
           </Routes>
     </div>
   )
