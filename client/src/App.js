@@ -20,8 +20,8 @@ function App() {
           : console.log('first')
       }
           <Routes>
-            <Route exact path='/welcome' element={ <Welcome />} />
-            <Route exact path='/timeline' element={ <Timeline />} />
+          <Route exact path='/timeline' element={ <Timeline />} />
+            <Route exact path='/friends' element={ <Welcome />} />
           </Routes>
       </div>
     </div>
