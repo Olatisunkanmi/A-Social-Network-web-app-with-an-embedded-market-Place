@@ -7,11 +7,11 @@ const Timeline = () => {
   const { sideBar, setSideBar } =  useStateContext();
   return (
         <div 
-        className={` text-white flex flex-col p-20
+        className={` text-black flex flex-col p-20
         ${sideBar ? 'w-3/4 ' 
             : 'sidebar-toggle' }`}>
             <Header />
-            <p> Hello </p>
+            <p>  TIME LINE</p>
           </div>
   )
 }
