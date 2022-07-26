@@ -29,13 +29,30 @@ const Header = () => {
                 </div>
 
 
-                <div>
+                <div className='w-4/5'>
                         <ul
-                         className='flex flex-row w-4/5'>
-                                <li> <MessageOutlined /></li>
-                                <li> <Favorite /> </li> 
-                                <li> <NotificationImportantOutlined/> </li>
-                                <li> <ShoppingCartOutlined /></li>
+                         className='flex flex-row  justify-end space-x-5'>
+                                <li>
+                                    <div>
+                                    <MessageOutlined />
+                                      </div>  
+                                </li>
+                                <li>
+                                    <div>
+                                    <Favorite />
+                                      </div>  
+                                </li>
+                                <li>
+                                    <div>
+                                    <NotificationImportantOutlined/>
+                                      </div>  
+                                </li>
+                                <li>
+                                    <div>
+                                    <ShoppingCartOutlined />
+                                      </div>  
+                                </li>
+                             
                         </ul>
                 </div>
     </div>
