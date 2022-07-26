@@ -5,7 +5,7 @@ const Sidebar = () => {
 <>
 
 <div 
-        className='bg-stone-500 h-screen w-1/6'>
+        className=' h-screen w-1/6 sidebar'>
 
         <div
                 className='p-5 pt-20 h-full justify-between flex flex-col w-full '>
