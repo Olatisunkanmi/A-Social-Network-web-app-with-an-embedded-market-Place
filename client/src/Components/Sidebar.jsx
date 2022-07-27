@@ -8,7 +8,7 @@ const Sidebar = () => {
 <>
 
 <div 
-        className='hidden h-screen w-1/6 bg-white sidebar
+        className='hidden fixed h-screen w-1/6 bg-white sidebar
                 lg:flex'>
 
         <div
