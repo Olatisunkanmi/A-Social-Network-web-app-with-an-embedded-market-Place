@@ -28,9 +28,9 @@
 }
 
 .upload{
-    box-shadow: 7px 6px 0px -4px rgba(63,99,219,0.38);
-    -webkit-box-shadow: 7px 6px 0px -4px rgba(63,99,219,0.38);
-    -moz-box-shadow: 7px 6px 0px -4px rgba(63,99,219,0.38);
+    box-shadow: 7px 0px 0px -4px rgba(0,0,0,0.38);
+    -webkit-box-shadow: 7px 0px 0px -4px rgba(0,0,0,0.38);
+    -moz-box-shadow: 7px 0px 0px -4px rgba(0,0,0,0.38);
 }
 
 
