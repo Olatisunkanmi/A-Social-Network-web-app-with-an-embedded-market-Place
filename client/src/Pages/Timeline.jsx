@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Upload, Story  } from '../Components';
+import { Header, Upload, Story, Random  } from '../Components';
 import { useStateContext } from '../Contexts/Context';
 import '../App.css'
 
@@ -24,8 +24,9 @@ const Timeline = () => {
                           {/** Stories Section  */}
 
 
-                              <div className='w-2/5'>
+                              <div className='w-2/6'>
                                   <Story />
+                                  <Random />
                               </div>
                   </div>
           </div>
