@@ -6,7 +6,7 @@ import '../App.css'
 
 const Upload = () => {
   return (
-    <div className='mt-5 flex flex-col bg-white border-2 rounded-xl upload border-blue-200'>
+    <div className='mt-5 flex flex-col bg-white border-2 rounded-xl upload border-stone-300'>
 
 
             <div
