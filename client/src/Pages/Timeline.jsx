@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Upload, Story, Random  } from '../Components';
+import { Header, Upload, Story, Random, Update  } from '../Components';
 import { useStateContext } from '../Contexts/Context';
 import '../App.css'
 
@@ -7,8 +7,8 @@ const Timeline = () => {
   const { sideBar, setSideBar } =  useStateContext();
   return (
     <div 
-    className={` text-black flex flex-col p-20 
-    ${sideBar ? 'w-9/12  ' 
+    className={` text-black flex flex-col pt-5 pl-20 
+    ${sideBar ? 'w-4/6  m-auto' 
         : 'w-9/12 m-auto' }`}>
             <Header />
             
@@ -18,6 +18,7 @@ const Timeline = () => {
                               <div 
                                 className='w-4/6 mr-4'>
                                   <Upload />
+                                  <Update />
                               </div>
 
 
