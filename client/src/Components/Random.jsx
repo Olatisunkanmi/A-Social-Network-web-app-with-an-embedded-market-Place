@@ -5,7 +5,7 @@ import img from '../Assests/pro.jpg'
 const Random = () => {
   return (
     <div
-    className='story border-2 bg-white border-stone-300 rounded-xl mt-5 flex flex-col bg-blue-400 text-white'>
+    className='story border-2 border-stone-300 rounded-xl mt-5 flex flex-col bg-blue-400 text-white'>
 
                 <div className='p-3 justify-between flex flex-row'>
                 <CardGiftcard />
