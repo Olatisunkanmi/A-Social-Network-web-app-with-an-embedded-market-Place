@@ -11,7 +11,7 @@ const Welcome = () => {
   return (
     <div 
     className={` text-black flex flex-col p-20 
-    ${sideBar ? 'w-4/5  ' 
+    ${sideBar ? 'w-3/5  m-auto' 
         : 'w-9/12 m-auto' }`}>
             <Header />
             <p>  TIME LINE</p>
