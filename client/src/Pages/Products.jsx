@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProductHeader, ProductGrid} from '../Components'
+import { ProductHeader, ProductGrid, ProductCard  } from '../Components'
 import '../App.css'
 import { useStateContext } from '../Contexts/Context';
 
@@ -15,7 +15,25 @@ const Products = () => {
       w-full`} >
 
         <ProductHeader />
-        <ProductGrid />
+        <div
+        className='w-4/5 m-auto ' >
+         <ProductGrid />
+         
+                <div className='flex flex-row flex-wrap w-full justify-evenly'>
+                  <ProductCard />
+                  <ProductCard />
+                  <ProductCard />
+                  <ProductCard />
+                  <ProductCard />
+                  <ProductCard />
+                  <ProductCard />
+                  <ProductCard />
+                 
+                </div>
+              
+                
+        </div>
+       
         
     </div>
   )

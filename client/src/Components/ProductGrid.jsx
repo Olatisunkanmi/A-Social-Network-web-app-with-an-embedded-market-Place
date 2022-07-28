@@ -4,7 +4,7 @@ import '../App.css'
 const ProductGrid = () => {
   return (
     <div
-      className='w-4/5 m-auto flex flex- col' >
+      className='w-full flex flex-col' >
 
             <div className='flex flex-row items-center justify-between w-full p-2'>
 
