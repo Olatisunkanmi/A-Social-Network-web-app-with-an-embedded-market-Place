@@ -87,7 +87,7 @@ const Sidebar = () => {
                                         
                                                 <li
                                                         className='hover:bg-slate-200 pl-4 p-2'>
-                                                        <a href="./timeline"> 
+                                                        <a href="./products"> 
                                                                 <div
                                                                  className='flex flex-row 
                                                                  items-center p-1
