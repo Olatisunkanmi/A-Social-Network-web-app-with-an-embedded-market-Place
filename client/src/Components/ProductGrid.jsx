@@ -4,13 +4,45 @@ import '../App.css'
 const ProductGrid = () => {
   return (
     <div
-      className='w-full flex flex-col' >
+      className='w-full my-5 flex flex-col' >
 
             <div className='flex flex-row items-center justify-between w-full p-2'>
 
-                    <div className='flex flex-row w-3/4'>
+                    <div className='flex flex-row w-1/4'>
                     <p className='font-mono text-lg font-bold border-b-2 p-2 border-black cursor-pointer'> Male Clothings  </p>
                     </div>
+
+
+                  <div 
+                      className='flex flex-col w-2/4'>
+                          <p className='font-mono text-lg font-bold p-2  cursor-pointer'> Overview</p>
+                          
+                          
+                          <div
+                            className='flex flex-row'>
+                            
+                                <div
+                                  className='flex flex-col'>
+                                    <p className='font-sans text-sm font-semibold'> 290 </p>
+                                    <p className='font-sans text-sm font-semibold'> Products </p>
+                                </div>
+
+                                <div
+                                className='flex flex-col mx-5'>
+                                    <p className='font-sans text-sm font-semibold'> 290 K </p>
+                                    <p className='font-sans text-sm font-semibold'> Likes </p>
+                                </div>
+
+                                <div
+                                className='flex flex-col'>
+                                    <p className='font-sans text-sm font-semibold'> 90 </p>
+                                    <p className='font-sans text-sm font-semibold'> Followers </p>
+                                </div>
+                          </div>
+                  </div>
+
+
+
 
                     <div 
                       className='w-1/4 flex flex-row'>
