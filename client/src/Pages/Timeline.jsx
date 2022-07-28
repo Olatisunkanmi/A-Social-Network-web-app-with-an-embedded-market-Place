@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Upload, Story, Random, Update  } from '../Components';
+import { Header, Upload, Story, Random, Update, SuggestedFriends  } from '../Components';
 import { useStateContext } from '../Contexts/Context';
 import '../App.css'
 
@@ -19,6 +19,7 @@ const Timeline = () => {
                                 className='w-4/6 mr-4'>
                                   <Upload />
                                   <Update />
+                                  <Update />
                               </div>
 
 
@@ -28,6 +29,7 @@ const Timeline = () => {
                               <div className='w-2/6'>
                                   <Story />
                                   <Random />
+                                  <SuggestedFriends />
                               </div>
                   </div>
           </div>
