@@ -7,3 +7,6 @@ export {default as Story } from './Story'
 export {default as Random } from './Random';
 export { default as Update } from './Update'
 export {default as SuggestedFriends} from './SuggestedFriends'
+export {default as ProductHeader} from './ProductHeader'
+export { default as UserPicture } from './UserPicture'
+export { default as ProductGrid } from './ProductGrid'
