@@ -6,3 +6,4 @@ export {default as Sidebar} from './Sidebar'
 export {default as Story } from './Story'
 export {default as Random } from './Random';
 export { default as Update } from './Update'
+export {default as SuggestedFriends} from './SuggestedFriends'
