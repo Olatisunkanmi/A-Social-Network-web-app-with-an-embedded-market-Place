@@ -63,3 +63,16 @@
 .story-icon:hover{
     color:  blue;
 }
+
+
+.product-nav{
+    box-shadow: -2px 9px 6px -2px rgba(0,0,0,0.41);
+-webkit-box-shadow: -2px 9px 6px -2px rgba(0,0,0,0.41);
+-moz-box-shadow: -2px 9px 6px -2px rgba(0,0,0,0.41);
+}
+
+.sort-btn{
+    box-shadow: -3px -1px 14px 6px rgba(255,255,255,1);
+    -webkit-box-shadow: -3px -1px 14px 6px rgba(255,255,255,1);
+    -moz-box-shadow: -3px -1px 14px 6px rgba(255,255,255,1);
+}
