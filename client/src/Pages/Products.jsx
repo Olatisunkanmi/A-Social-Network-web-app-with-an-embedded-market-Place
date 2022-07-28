@@ -11,7 +11,7 @@ const Products = () => {
 
   return (
     <div 
-    className={` text-black flex flex-col bg-gray-300 
+    className={` text-black flex flex-col bg-gray-400 
       w-full`} >
 
         <ProductHeader />
