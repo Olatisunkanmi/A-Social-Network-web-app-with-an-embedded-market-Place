@@ -7,25 +7,47 @@ import { useLocation } from 'react-router-dom';
 import { useStateContext } from '../Contexts/Context';
 
 
+
 const Header = () => {
   const { sideBar, setSideBar } =  useStateContext();
   // console.log(sideBar)
    
+
+
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () =>{
+    
+     if(window.scrollY >= 70){
+       setColorchange(true);
+     }
+     else{
+       setColorchange(false);
+     }
+  };
+  window.addEventListener('scroll', changeNavbarColor);
+
+
+
+
+
+
 
     const pathHeader = useLocation().pathname.split('/')[1]
     console.log(pathHeader);
   return (
     <>
     <div 
-            className='flex flex- row justify-between'>
+            className={`flex flex- row justify-between top-0 sticky first-letter:
+            ${colorChange ? 'bg-white p-4 px-10 relative mx-10 border-2 rounded-3xl border-stone-600' 
+                  : ' ' }`} >
                 <div 
-                    className='flex flex-row w-1/5'>
+                    className='flex flex-row w-1/5 ml-3'>
                    <button onClick={() => setSideBar(
                     (prevSideBar) => !prevSideBar )}>
                    <Menu /> 
                    </button>
                     <p
-                      className='text-2xl font-mono capitalize'> {pathHeader} </p>
+                      className='text-2xl font-mono ml-2 capitalize'> {pathHeader} </p>
                 </div>
 
 
