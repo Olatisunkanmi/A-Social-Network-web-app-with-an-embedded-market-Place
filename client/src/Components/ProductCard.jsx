@@ -1,4 +1,4 @@
-import { FavoriteOutlined, LocalGroceryStoreSharp } from '@material-ui/icons'
+import { FavoriteOutlined, LocalGroceryStoreSharp, MoreVertOutlined } from '@material-ui/icons'
 import React from 'react'
 import img1 from '../Assests/M1.jpg'
 import PicArr from './Picture'
@@ -18,7 +18,13 @@ const ProductCard = () => {
                                                     <div className='flex flex-col   h-5/6 '>
                                                             <img src={random } alt="" className='object-cover w-full  h-4/5'/>
                                                         
-                                                            <p className='mt-3 text-center text-black font-serif font-bold text-lg'> Men Leather Jacket</p>
+                                                                <div className='mt-3 p-2  items-center flex flex-row justify-between text-black font-serif font-bold text-lg'>
+                                                                                <p> Men Leather Jacket</p>
+                                                                                <button>
+                                                                                <MoreVertOutlined className='cursor-pointer'/>
+                                                                                </button>
+                                                                </div>
+
                                                             <p className=' leading-6 p-3 text-sm text-shade-800 font-sans font-semibold'> A Strong Leather Jacket for young men, who are fashionable and gentlemen. </p> 
                                                     </div>
 
