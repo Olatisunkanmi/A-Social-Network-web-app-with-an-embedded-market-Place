@@ -1,46 +1,31 @@
-import {CreativeWrite, Post, About, Login, Edit, NotFound, Write, EachPosts} from './Component/Index'
-import { BrowserRouter, Routes, Route} from "react-router-dom";
-import { Context } from './Component/context/Context';
-import RequireAuth from './Hooks/RequireAuth';
-import { useContext } from 'react'
-
-
+import './App.css';
+import { Routes, Route } from "react-router-dom";
+import { useState } from 'react';
+import {Home} from './Pages/index'
+import { useStateContext } from './Contexts/Context';
+import { Welcome, Timeline, Sidebar } from './Components/index'
+import {Products} from './Pages/index'
 
 
 function App() {
-  const {user} =  useContext(Context);
- 
-    
-
+  const { sideBar, setSideBar } = useStateContext();
+    console.log(sideBar)
   return (
    
-    <BrowserRouter >   
-        <Routes> 
-            <Route  path='*' element={<NotFound />} /> 
-
-            <Route exact path='/' element={<About />} />  
-            <Route  path='/home/' element={<CreativeWrite />} /> 
-            <Route  path='/posts/' element={<EachPosts />} /> 
-            <Route  path='/posts/:Id' element={<Post />} />
-            <Route  path='/admin-login' element={<Login />} /> 
-            <Route  element = { <RequireAuth  />}>
-                   <Route  path='/admin-login/edit' element={<Edit />} />
-                   <Route  path='/admin-login/edit/:Id' element={<Write />} />
-                   <Route  path='/admin-login/edit/adminwrite' element={<Write />}
-          /> 
-            </Route>
-        
-
-       </Routes>
-    </BrowserRouter>
-
- 
-
- 
-
-
-
+      <div className={` ${sideBar} ? 'bg-stone-200 flex flex-row '
+            : ' '    `}>
+      {
+          sideBar ? <Sidebar />
+          : console.log('first')
+      }
+          <Routes>
+          <Route exact path='/timeline' element={ <Timeline />} />
+            <Route exact path='/friends' element={ <Welcome />} />
+            <Route exact path='/products' element={ <Products />} />
+          </Routes>
+      </div>
+   
   );
 }
 
-export default App;
+export default App
