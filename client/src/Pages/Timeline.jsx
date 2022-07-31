@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Upload, Story, Random, Update, SuggestedFriends  } from '../Components';
+import {  Upload, Story, Random, Update, SuggestedFriends ,RecommendedPages , WeatherApi } from '../Components';
 import { useStateContext } from '../Contexts/Context';
 import '../App.css'
 
@@ -7,16 +7,30 @@ const Timeline = () => {
   const { sideBar, setSideBar } =  useStateContext();
   return (
     <div 
-    className={` text-black flex flex-col pt-5 pl-20 
-    ${sideBar ? 'w-4/6  m-auto' 
-        : 'w-9/12 m-auto' }`}>
-            <Header />
-            
-                  <div className='flex flex-row'>
+    className=''>
+      
+                  <div className='m-auto 
+
+                    w-4/5
+                    xl:w-4/5
+                  lg:w-full flex flex-col 
+                  lg:flex-row justify-center p-5 mt-5'>
+
+                        <div className='hidden 
+                        lg:block
+                          lg:w-1/4'>
+                      
+                        <RecommendedPages />
+                        <WeatherApi />
+                        </div>
 
                           {/** Feed Section  */}
                               <div 
-                                className='w-4/6 mr-4'>
+                                className='
+                                xl:block
+                               
+                                lg:w-2/4 
+                                lg:mx-5'>
                                   <Upload />
                                   <Update />
                                   <Update />
@@ -26,7 +40,8 @@ const Timeline = () => {
                           {/** Stories Section  */}
 
 
-                              <div className='w-2/6'>
+                              <div className='
+                              lg:w-1/4 '>
                                   <Story />
                                   <Random />
                                   <SuggestedFriends />
