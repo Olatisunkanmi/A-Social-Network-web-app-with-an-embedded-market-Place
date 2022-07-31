@@ -14,7 +14,7 @@ const Products = () => {
     className={` text-black flex flex-col bg-gray-400 
       w-full`} >
 
-        <ProductHeader />
+
         <div
         className='w-4/5 m-auto ' >
          <ProductGrid />
