@@ -6,7 +6,7 @@ import '../App.css'
 
 const Upload = () => {
   return (
-    <div className='mt-5 flex flex-col bg-white border-2 rounded-xl  border-stone-300'>
+    <div className=' flex flex-col bg-white border-2 rounded-xl  border-stone-300'>
 
 
             <div
@@ -54,9 +54,12 @@ const Upload = () => {
 
 
               <div 
-                className='flex flex-row p-2  border-t-2 justify-between'>
-                      <div    className='flex flex-row space-x-2'>
-                                  <div className='flex 
+                className='flex 
+                flex:col 
+                lg:flex-row p-2  border-t-2 justify-between'>
+                      <div    className='flex flex-row 
+                            '>
+                                  <div className='lg:flex hidden
                                   flex-row items-center 
                                   rounded-full bg-stone-200 
                                   cursor-pointer p-2'>
@@ -65,7 +68,7 @@ const Upload = () => {
                                     </div>
             
             
-                                    <div className='flex 
+                                    <div className='lg:flex hidden
                                     flex-row items-center 
                                     rounded-full bg-stone-200 
                                     cursor-pointer p-2'>
@@ -73,12 +76,12 @@ const Upload = () => {
                                       <p className='font-thin font-serif  ml-1'> Activity </p>
                                     </div>
             
-                                    <div className='flex 
+                                    <div className='lg:flex hidden
                                     flex-row items-center 
                                     rounded-full bg-stone-200 
                                     cursor-pointer p-2'>
                                       <LocationOn className='media-icons' />
-                                      <p className='font-thin font-serif  ml-1'> Location </p>
+                                      <p className='font-thin font-serif  '> Location </p>
                                     </div>
             
                                     <div className='flex 
