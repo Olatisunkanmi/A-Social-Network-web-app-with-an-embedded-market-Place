@@ -1,19 +1,12 @@
-import React from 'react';
+import { ChatBubble, Email, HomeOutlined, GridOnOutlined, LocalGroceryStoreOutlined, MailOutline, Notifications, SearchOutlined, SearchRounded, Shop, HomeOutlinedOutlined } from '@material-ui/icons'
+import React from 'react'
 import { useState } from 'react';
-import {  Favorite, Menu, MessageOutlined, NotificationImportantOutlined, ShoppingCartOutlined } from '@material-ui/icons'
-import {Link } from 'react-router-dom';
-import { Sidebar } from './index'
-import { useLocation } from 'react-router-dom';
-import { useStateContext } from '../Contexts/Context';
 
+import {UserPicture} from './index'
+import { Link, useLocation } from 'react-router-dom';
 
-
+import '../App.css'
 const Header = () => {
-  const { sideBar, setSideBar } =  useStateContext();
-  // console.log(sideBar)
-   
-
-
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () =>{
     
@@ -27,59 +20,59 @@ const Header = () => {
   window.addEventListener('scroll', changeNavbarColor);
 
 
-
-
-
-
-
     const pathHeader = useLocation().pathname.split('/')[1]
     console.log(pathHeader);
+
+
+
   return (
-    <>
-    <div 
-            className={`flex flex- row justify-between top-0 sticky first-letter:
-            ${colorChange ? 'bg-white p-4 px-10 relative mx-10 border-2 rounded-3xl border-stone-600' 
-                  : ' ' }`} >
-                <div 
-                    className='flex flex-row w-1/5 ml-3'>
-                   <button onClick={() => setSideBar(
-                    (prevSideBar) => !prevSideBar )}>
-                   <Menu /> 
-                   </button>
-                    <p
-                      className='text-2xl font-mono ml-2 capitalize'> {pathHeader} </p>
+
+    <div className='w-full items-center top-0 sticky p-1 flex flex-row bg-white  justify-between border-b-2 
+    product-nav
+    '>
+               
+
+                <div className='flex flex-row text-white w-2/6'>
+                <p
+                      className='text-2xl text-black font-mono ml-2 capitalize'> {pathHeader} </p>
+
+                    <Link to='./timeline' >
+                    <p className='ml-4 text-blue-700  p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'> <HomeOutlined />  </p>
+                    </Link> 
+                    <a href="" className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'> <Notifications />  </a>
+                    <a href="" className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'> <Email />  </a>
+                    <a href="" className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'> <ChatBubble />  </a>
+                    <a href="" className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'> <GridOnOutlined />  </a>
                 </div>
 
 
-                <div className='w-4/5'>
-                        <ul
-                         className='flex flex-row  justify-end space-x-5'>
-                                <li>
-                                    <div>
-                                    <MessageOutlined />
-                                      </div>  
-                                </li>
-                                <li>
-                                    <div>
-                                    <Favorite />
-                                      </div>  
-                                </li>
-                                <li>
-                                    <div>
-                                    <NotificationImportantOutlined/>
-                                      </div>  
-                                </li>
-                                <li>
-                                    <div>
-                                    <ShoppingCartOutlined />
-                                      </div>  
-                                </li>
-                             
-                        </ul>
+
+               
+
+                <div 
+                className='justify-end text-white items-center flex flex-row rounded-xl  w-2/6 pr-3'>
+                                <div 
+                                >
+                                <SearchRounded  className=' text-blue-700'/>
+                                <input type="text" 
+                                placeholder='Search' id="" 
+                                className='p-2
+                                 border-2 font-semibold  text-black outline-blue-700
+                                placeholder:text-black 
+                                placeholder:font-thin rounded-xl ' />
+                                </div>
+                        
+                                      
+                            <div className='flex flex-row text-white items-center'>
+                          <Link to='./products'>
+                          <p href="" className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'> <LocalGroceryStoreOutlined />  </p>
+                          </Link>
+
+                            <UserPicture className=' text-blue-700'/>
+                            </div>
+                          
                 </div>
     </div>
-    </>
-          
   )
 }
 
