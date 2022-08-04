@@ -1,13 +1,11 @@
 import React from 'react'
 import { ProductHeader, ProductGrid, ProductCard  } from '../Components'
 import '../App.css'
-import { useStateContext } from '../Contexts/Context';
 
 
 
 const Products = () => {
-  const { sideBar, setSideBar } =  useStateContext();
-  setSideBar(false)
+ 
 
   return (
     <div 
@@ -20,10 +18,6 @@ const Products = () => {
          <ProductGrid />
          
                 <div className='flex flex-row flex-wrap w-full justify-evenly'>
-                  <ProductCard />
-                  <ProductCard />
-                  <ProductCard />
-                  <ProductCard />
                   <ProductCard />
                   <ProductCard />
                   <ProductCard />
