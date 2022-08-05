@@ -7,7 +7,7 @@ import '../App.css'
 const UserPicture = () => {
   return (
     <div>
-    <img src={img} alt=""  className='border-2 m-1 border-black rounded-full h-10 w-10 object-cover'/>
+    <img src={img} alt=""  className='m-1 rounded-full h-12 w-12 object-cover cursor-pointer'/>
     </div>
   )
 }
