@@ -1,6 +1,6 @@
 import { Camera, CameraAltOutlined, EditOutlined, LocalOfferOutlined, LocationOn, MoreHorizOutlined, PhotoAlbumOutlined, TagFaces } from '@material-ui/icons'
 import React from 'react'
-import img from '../Assests/pro.jpg'
+import {UserPicture } from './index'
 import '../App.css'
 
 
@@ -43,7 +43,7 @@ const Upload = () => {
 
                     <div 
                       className='flex flex-row mt-4 '>
-                    <img src={img} alt=""  className='border-2 m-1 border-black rounded-full h-10 w-10 object-cover'/>
+                    <UserPicture />
                     <textarea 
                       className='w-full textarea m-2 text-md'
                         placeholder='What is on your Mind ? '
