@@ -1,12 +1,14 @@
 import React from 'react'
 import img from '../Assests/pro.jpg'
 import img1 from '../Assests/1.jpg'
+import {UserPicture } from './index'
+
  import '../App.css'
 import { MoreVert } from '@material-ui/icons'
 
 const Update = () => {
   return (
-    <div className=' border-2 bg-white border-stone-300 rounded-xl mt-5 flex flex-col px-3'>
+    <div className=' border-2 bg-white border-stone-300 rounded-xl flex flex-col px-3'>
 
             {/**NAme and Date  */}
 
@@ -15,7 +17,7 @@ const Update = () => {
 
 
                     <div className='flex flex-row'>
-                    <img src={img} alt=""  className='border-2 m-1 border-black rounded-full h-10 w-10 object-cover'/>
+                    <UserPicture />
                         
                             <div 
                                 className='pl-2'>
@@ -40,11 +42,7 @@ const Update = () => {
 
 
                                         <div className='flex flex-row'>
-                                                <img src={img} alt=""  className='z-40 border-2 m-1 border-black rounded-full h-10 w-10 object-cover'/>
-                                                <img src={img} alt=""  className='z-30 border-2 m-1 border-black rounded-full h-10 w-10 object-cover'/>
-                                                <img src={img} alt=""  className='z-20 border-2 m-1 border-black rounded-full h-10 w-10 object-cover'/>
-                                                <img src={img} alt=""  className='z-10 border-2 m-1 border-black rounded-full h-10 w-10 object-cover'/>
-                                                <img src={img} alt=""  className='z-0 border-2 m-1 border-black rounded-full h-10 w-10 object-cover'/>
+                                              <UserPicture  />
                                         </div>
 
 
