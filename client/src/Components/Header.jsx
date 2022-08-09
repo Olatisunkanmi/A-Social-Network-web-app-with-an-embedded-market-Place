@@ -19,15 +19,14 @@ const Header = () => {
   };
   window.addEventListener('scroll', changeNavbarColor);
 
-
     const pathHeader = useLocation().pathname.split('/')[1]
-    console.log(pathHeader);
+
 
 
 
   return (
 
-    <div className='w-full items-center top-0 sticky p-1 flex flex-row bg-white  justify-between border-b-2 
+    <div className='w-full items-center z-50 top-0 sticky p-1 flex flex-row bg-white  justify-between border-b-2 
     product-nav
     '>
                
