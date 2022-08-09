@@ -1,11 +1,12 @@
 import { CardGiftcard, MoreVertOutlined } from '@material-ui/icons'
 import React from 'react'
-import img from '../Assests/pro.jpg'
+import {UserPicture } from './index'
+
 
 const Random = () => {
   return (
     <div
-    className='story border-2 border-stone-300 rounded-xl mt-5 flex flex-col bg-blue-400 text-white'>
+    className='story border-2 border-stone-300 rounded-xl  flex flex-col bg-blue-400 text-white'>
 
                 <div className='p-3 justify-between flex flex-row'>
                 <CardGiftcard />
@@ -15,7 +16,7 @@ const Random = () => {
                 <div className='text-center flex flex-col items-center'>
 
               
-                <img src={img} alt=""  className='border-2 m-1 border-black rounded-full h-10 w-10 object-cover '/>
+              <UserPicture /> 
                 
 
                     <p className='font-semibold font-sans '>Shannon got a new Job! </p>
