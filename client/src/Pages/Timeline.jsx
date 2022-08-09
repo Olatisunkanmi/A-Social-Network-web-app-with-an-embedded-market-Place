@@ -4,8 +4,7 @@ import { useStateContext } from '../Contexts/Context';
 import '../App.css'
 
 const Timeline = () => {
-  const { sideBar, setSideBar } =  useStateContext();
-  return (
+    return (
     <div 
     className=''>
       
@@ -16,19 +15,23 @@ const Timeline = () => {
                   lg:w-full flex flex-col 
                   lg:flex-row justify-center p-5 mt-5'>
 
-                        <div className='hidden 
-                        lg:block
-                          lg:w-1/4'>
-                      
-                        <RecommendedPages />
-                        <WeatherApi />
-                        </div>
+                                      <div className='hidden 
+                                      space-y-5
+                                      lg:block
+                                        lg:w-1/4'>
+                                      <RecommendedPages />
+                                      <WeatherApi />
+                                    
+                                      </div>
+
+
+
 
                           {/** Feed Section  */}
                               <div 
                                 className='
                                 xl:block
-                               
+                               space-y-5
                                 lg:w-2/4 
                                 lg:mx-5'>
                                   <Upload />
@@ -37,10 +40,16 @@ const Timeline = () => {
                               </div>
 
 
+
+
+
+
+
                           {/** Stories Section  */}
 
 
                               <div className='
+                            space-y-5
                               lg:w-1/4 '>
                                   <Story />
                                   <Random />
