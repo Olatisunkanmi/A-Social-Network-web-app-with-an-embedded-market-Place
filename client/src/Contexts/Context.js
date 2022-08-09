@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useState } from 'react'
+import React, { createContext, useContext, useState, useEffect } from 'react'
+import axios from 'axios'
 
 const UiStateContext = createContext()
 
@@ -12,11 +13,14 @@ const initialState = {
 
 
 export const Context = ( {children } ) => {
-  const [sideBar , setSideBar] = useState(true)
+  const [Widget , setWidget  ] = useState(false)
+
 
   const value = {
-    sideBar,
-    setSideBar,
+    Widget, 
+    setWidget,
+    
+
   }
 
   return (
