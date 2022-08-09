@@ -15,7 +15,7 @@ function App() {
       <div className= ''>
          <Header />
           <Routes>
-          <Route exact path='/timeline' element={ <Timeline />} />
+            <Route exact path='/timeline' element={ <Timeline />} />
             <Route exact path='/friends' element={ <Welcome />} />
             <Route exact path='/products' element={ <Products />} />
           </Routes>
