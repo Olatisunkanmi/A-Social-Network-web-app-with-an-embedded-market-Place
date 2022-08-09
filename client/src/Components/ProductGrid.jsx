@@ -47,7 +47,7 @@ const ProductGrid = () => {
                     <div 
                       className='w-1/4 flex flex-row'>
                           <form>
-                                <label for='sort'className='font-mono text-lg font-bold cursor-pointer' > Sort by:</label>
+                                <label className='font-mono text-lg font-bold cursor-pointer' > Sort by:</label>
 
                                 <select name="sort" id="sort"  className='font-mono text-stone-600  rounded-lg text-sm font-bold cursor-pointer p-2 mx-5'>
                                 <option value=""> Highest Rated  </option>
