@@ -4,11 +4,9 @@ const PhotosCollection = ({ img}) => {
 
 
   return (
-    <div className='w-1/2'>
-
-                <div className=''>
-                        <img src={img} alt="" className='w-full h-36 object-cover rounded-xl'/>
-                </div>
+    <div className='w-1/4'>
+          <img src={img} alt="" className='w-full h-20 object-cover rounded-xl cursor-pointer'/>
+       
     </div>
   )
 }
