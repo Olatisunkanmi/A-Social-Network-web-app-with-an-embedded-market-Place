@@ -113,7 +113,10 @@ rounded-md text-white font-mono font-bold"
         >
           <button className="">Post</button>
         </div>
-      </div>
+  
+
+
+        
     </div>
   );
 };
