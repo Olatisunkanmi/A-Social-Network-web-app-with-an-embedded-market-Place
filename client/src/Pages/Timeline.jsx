@@ -9,10 +9,10 @@ const Timeline = () => {
     className=''>
       
                   <div className='m-auto 
-
+              
                     w-4/5
-                    xl:w-4/5
-                  lg:w-full flex flex-col 
+                    xl:w-3/4
+                   flex flex-col 
                   lg:flex-row justify-center p-5 mt-5'>
 
                                       <div className='hidden 
