@@ -1,38 +1,29 @@
-
-.toggle{
-    width: 70%;
-    margin: auto;
- 
-    
+.toggle {
+	width: 70%;
+	margin: auto;
 }
 
-
-.sidebar-icons{
-    font-size: 17px !important;
+.sidebar-icons {
+	font-size: 17px !important;
 }
 
-.upload-icons{
-    font-size: 15px !important;
-
+.upload-icons {
+	font-size: 15px !important;
 }
 
-
-
-
-.textarea:focus{
-    outline: none !important;
-    /* border: 1px solid white !important; */
+.textarea:focus {
+	outline: none !important;
+	/* border: 1px solid white !important; */
 }
 
-.media-icons{
-    font-size: 17px !important;
+.media-icons {
+	font-size: 17px !important;
 }
 
-.story-icon{
-    color: #555;
+.story-icon {
+	color: #555;
 }
 
-.story-icon:hover{
-    color:  blue;
+.story-icon:hover {
+	color: blue;
 }
-
