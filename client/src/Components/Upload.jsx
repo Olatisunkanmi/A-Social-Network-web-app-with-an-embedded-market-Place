@@ -57,46 +57,30 @@ const Upload = () => {
                 className='flex 
                 flex:col 
                 lg:flex-row p-2  border-t-2 justify-between'>
-                      <div    className='flex flex-row 
+                      <div    className='flex flex-row  text-sm
                             '>
                                   <div className='lg:flex hidden
                                   flex-row items-center 
                                   rounded-full bg-stone-200 
-                                  cursor-pointer p-2'>
+                                  cursor-pointer p-1'>
                                     <CameraAltOutlined className='media-icons' />
                                       <p className='font-thin font-serif  ml-1' >  Media </p>
                                     </div>
             
             
-                                    <div className='lg:flex hidden
+                                    <div className='flex 
                                     flex-row items-center 
                                     rounded-full bg-stone-200 
-                                    cursor-pointer p-2'>
+                                    cursor-pointer p-1 mx-2'>
                                       <TagFaces className='media-icons' />
                                       <p className='font-thin font-serif  ml-1'> Activity </p>
                                     </div>
             
-                                    <div className='lg:flex hidden
+                                    
+                                    <div className='flex text 
                                     flex-row items-center 
                                     rounded-full bg-stone-200 
-                                    cursor-pointer p-2'>
-                                      <LocationOn className='media-icons' />
-                                      <p className='font-thin font-serif  '> Location </p>
-                                    </div>
-            
-                                    <div className='flex 
-                                    flex-row items-center 
-                                    rounded-full bg-stone-200 
-                                    cursor-pointer p-2'>
-                                      <LocalOfferOutlined className='media-icons' />
-                                      <p className='font-thin font-serif  ml-1'> Tag Friends </p>
-                                    </div>
-            
-                                    <div className='flex 
-                                    flex-row items-center 
-                                    rounded-full bg-stone-200 
-                                    cursor-pointer p-2'>
-            
+                                    cursor-pointer  px-4'>
                                       <MoreHorizOutlined />
                                     </div>
             
