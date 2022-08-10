@@ -13,11 +13,10 @@ const ProductCard = () => {
 
   return (
     <div className=" w-1/5 m-5 pro-card">
-      <div className="bg-stone-300 w-full h-full  flex flex-col justify-between  ">
-        <div className="flex flex-col   h-5/6 ">
-          <img src={random} alt="" className="object-cover w-full  h-4/5" />
-
-          <div className="mt-3 p-2  items-center flex flex-row justify-between text-black font-serif font-bold text-lg">
+      <div className="bg-stone-300 w-full h-full flex flex-col justify-between">
+        <div className="flex flex-col h-5/6 ">
+          <img src={random} alt="" className="object-cover w-full h-4/5" />
+          <div className="mt-3 p-2 items-center flex flex-row justify-between text-black font-serif font-bold text-lg">
             <p> Men Leather Jacket</p>
             <button>
               <MoreVertOutlined className="cursor-pointer" />
@@ -25,9 +24,8 @@ const ProductCard = () => {
           </div>
 
           <p className=" leading-6 p-3 text-sm text-shade-800 font-sans font-semibold">
-            {" "}
             A Strong Leather Jacket for young men, who are fashionable and
-            gentlemen.{" "}
+            gentlemen.
           </p>
         </div>
 
