@@ -1,7 +1,7 @@
 import React from 'react'
 import imgBk from '../Assests/background.png';
 import { Link } from 'react-router-dom';
-import { Update, MainProfilePhotosComp } from '../Components';
+import { Update, UserPhotoComp , UserShopComp, MoreVertIcon} from '../Components';
 
 const ProfileMain = () => {
   return (
@@ -54,25 +54,52 @@ const ProfileMain = () => {
 
                       <div className='w-full flex-row flex space-x-5'>
                       
-                                          <div className='w-2/6'>
-                                          <MainProfilePhotosComp />
-                                          <div> Hello Vidos </div>
+                                          <div className='w-2/6 space-y-5'>
+
+                                                      <div className='bg-white rounded-xl p-3 justify-between flex flex-row mb-5' >
+                                                      <p className='text-xl font-normal font-serif'>  User Side Components </p>
+
+
+                                                      <MoreVertIcon />
+                                                      </div>    
+
+
+                                                      <UserPhotoComp />
+                                                      <UserShopComp />
                                           </div>
 
 
-                                          <div className='w-4/6  flex flex-col space-y-3'>
-                                                 
-                                                          <div className=' justify-between flex flex-row items-center bg-white rounded-xl px-3 border-2 border-stone-100'>
-                                                                            <h2 className='text-xl font-normal font-serif'>Posts</h2>
 
-                                                                              <div className='flex flex-row'>
 
-                                                                              <button>   <p className='p-2 border-2 border-blue-400 text-black font-thin rounded-lg m-1'> Recents </p></button>
-                                                                              <button>    <p className='p-2 border-2 border-black text-black font-thin rounded-lg m-1'> Popular </p> </button>
-                                                                              </div>
-                                                          </div>
-                                               
-                                                          <Update />
+                              {/**User Posts  */}
+
+                                          <div className='w-4/6 '>
+
+
+                                                    <div className='space-y-2 flex flex-col'>
+                                                                    <div className=' justify-between flex flex-row items-center bg-white rounded-xl px-3 border-2 border-stone-100'>
+                                                                                        <h2 className='text-xl font-normal font-serif'>Posts</h2>
+
+                                                                                          <div className='flex flex-row'>
+
+                                                                                          <button>   <p className='p-2 border-2 border-blue-400 text-black font-thin rounded-lg m-1'> Recents </p></button>
+                                                                                          <button>    <p className='p-2 border-2 border-black text-black font-thin rounded-lg m-1'> Popular </p> </button>
+                                                                                          </div>
+                                                                      </div>
+                                                          
+                                                                      
+                                                                      <div className='w-full text-left flex flex-row'>
+                                                                        <div className='w-1/12'> </div>
+                                                                      
+
+                                                                        <div className='w-11/12 justify-self-end'>
+                                                                        <Update />
+                                                                        </div>
+                                                                      </div>
+                                                    
+                                                    
+                                                    </div>
+                                                      
                                           </div>
 
 
