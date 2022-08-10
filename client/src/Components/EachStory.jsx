@@ -8,9 +8,9 @@ const EachStory = () => {
     <div
             className='border-t-2 border-stone-200 p-3 flex flex-row  items-center'>
 
-                    <div    className='mx-5 border-2 border-dotted rounded-full 
+                    <div    className='mx-5 border-2 rounded-full 
                     cursor-pointer
-                    border-stone-600
+                    border-stone-400
                     hover:border-solid
                     hover:border-blue-600'>
                     <UserPicture />
