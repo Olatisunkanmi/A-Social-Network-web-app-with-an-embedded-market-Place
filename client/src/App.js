@@ -1,5 +1,6 @@
-import './App.css';
+import "./App.css";
 import { Routes, Route } from "react-router-dom";
+
 import { Welcome,   Header,} from './Components/index'
 import {Products,  Timeline, ProfileMain } from './Pages/index'
 
@@ -17,7 +18,8 @@ function App() {
           </Routes>
       </div>
    
+
   );
 }
 
-export default App
+export default App;

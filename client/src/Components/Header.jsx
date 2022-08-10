@@ -1,30 +1,40 @@
-import { ChatBubble, Email, HomeOutlined, GridOnOutlined, LocalGroceryStoreOutlined, MailOutline, Notifications, SearchOutlined, SearchRounded, Shop, HomeOutlinedOutlined } from '@material-ui/icons'
-import React from 'react'
-import { useState } from 'react';
+import {
+  ChatBubble,
+  Email,
+  HomeOutlined,
+  GridOnOutlined,
+  LocalGroceryStoreOutlined,
+  MailOutline,
+  Notifications,
+  SearchOutlined,
+  SearchRounded,
+  Shop,
+  HomeOutlinedOutlined,
+} from "@material-ui/icons";
+import React from "react";
+import { useState } from "react";
+import { UserPicture } from "./index";
+import { Link, useLocation } from "react-router-dom";
+import "../App.css";
 
-import {UserPicture} from './index'
-import { Link, useLocation } from 'react-router-dom';
-
-import '../App.css'
 const Header = () => {
-  const [colorChange, setColorchange] = useState(false);
-  const changeNavbarColor = () =>{
-    
-     if(window.scrollY >= 70){
-       setColorchange(true);
-     }
-     else{
-       setColorchange(false);
-     }
+  const [colorChange, setColorChange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 70) {
+      setColorChange(true);
+    } else {
+      setColorChange(false);
+    }
   };
-  window.addEventListener('scroll', changeNavbarColor);
-
-    const pathHeader = useLocation().pathname.split('/')[1]
 
 
+  window.addEventListener("scroll", changeNavbarColor);
 
+  const pathHeader = useLocation().pathname.split("/")[1];
+  console.log(pathHeader);
 
   return (
+
 
     <div className='w-full items-center z-50 top-0 sticky p-1 flex flex-row bg-white  justify-between border-b-2 
     product-nav
@@ -71,8 +81,9 @@ const Header = () => {
                             </div>
                           
                 </div>
-    </div>
-  )
-}
 
-export default Header
+    </div>
+  );
+};
+
+export default Header;

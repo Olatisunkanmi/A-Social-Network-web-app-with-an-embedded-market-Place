@@ -1,3 +1,4 @@
+
 import { Add, MoreVertOutlined } from '@material-ui/icons'
 import React from 'react'
 import {UserPicture } from './index'
@@ -49,7 +50,7 @@ const story = () => {
 
 
     </div>
-  )
-}
+  );
+};
 
-export default story
+export default story;

@@ -1,3 +1,4 @@
+
 import React from 'react'
 import img from '../Assests/pro.jpg'
 import img1 from '../Assests/1.jpg'
@@ -59,7 +60,7 @@ const Update = () => {
             </div>
 
     </div>
-  )
-}
+  );
+};
 
-export default Update
+export default Update;

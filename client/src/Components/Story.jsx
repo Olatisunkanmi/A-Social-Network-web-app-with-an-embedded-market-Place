@@ -1,3 +1,4 @@
+
 import { Add, Delete, MoreVertOutlined } from '@material-ui/icons'
 import React, { useState } from 'react'
 import { MoreVertIcon , DeleteWidget, EachStory, AddStory } from './index'
@@ -9,6 +10,7 @@ const Story = () => {
     const [ToggleDelete, setToggleDelete] = useState(false)
 
   return (
+
     <div
         className={`relative story border-2 bg-white border-stone-300 rounded-xl flex flex-col
               ${deleteWidget ? 'hidden' : 'block'}  `}>
@@ -32,8 +34,11 @@ const Story = () => {
               </div>
            
 
+
     </div>
-  )
-}
+  );
+};
+
 
 export default Story
+

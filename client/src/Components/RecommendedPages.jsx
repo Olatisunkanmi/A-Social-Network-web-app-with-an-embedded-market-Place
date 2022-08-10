@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import { EachRecommend , DeleteWidget, MoreVertIcon}  from './index'
 
@@ -7,7 +8,10 @@ const RecommendedPages = () => {
     const [ToggleDelete, setToggleDelete] = useState(false)
 
 
+  const view = () => {};
+
   return (
+
    <div>
    
    <div
@@ -39,4 +43,5 @@ const RecommendedPages = () => {
   )
 }
 
-export default RecommendedPages
+
+export default RecommendedPages;

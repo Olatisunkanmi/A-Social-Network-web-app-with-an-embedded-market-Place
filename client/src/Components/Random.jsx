@@ -1,3 +1,4 @@
+
 import { CardGiftcard, MoreVertOutlined } from '@material-ui/icons'
 import React from 'react'
 import {UserPicture } from './index'
@@ -26,8 +27,9 @@ const Random = () => {
                     hover:text-blue-500
                     '> Send a Message</a>
                 </div>
-    </div>
-  )
-}
 
-export default Random
+    </div>
+  );
+};
+
+export default Random;

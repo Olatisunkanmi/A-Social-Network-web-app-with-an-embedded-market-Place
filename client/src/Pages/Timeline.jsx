@@ -1,9 +1,18 @@
-import React from 'react';
-import {  Upload, Story, Random, Update, SuggestedFriends ,RecommendedPages , WeatherApi } from '../Components';
-import { useStateContext } from '../Contexts/Context';
-import '../App.css'
+import React from "react";
+import {
+  Upload,
+  Story,
+  Random,
+  Update,
+  SuggestedFriends,
+  RecommendedPages,
+  WeatherApi,
+} from "../Components";
+import { useStateContext } from "../Contexts/Context";
+import "../App.css";
 
 const Timeline = () => {
+
     return (
     <div 
     className=''>

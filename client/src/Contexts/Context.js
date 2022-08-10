@@ -1,14 +1,16 @@
+
 import React, { createContext, useContext, useState, useEffect } from 'react'
 import axios from 'axios'
 
-const UiStateContext = createContext()
+const UiStateContext = createContext();
 
 const initialState = {
   chat: false,
-        cart: false,
-        userProfile: false,
-        notification: false,
-}
+  cart: false,
+  userProfile: false,
+  notification: false,
+};
+
 
 
 
@@ -24,12 +26,8 @@ export const Context = ( {children } ) => {
   }
 
   return (
-      <UiStateContext.Provider 
-        value={value}>
+    <UiStateContext.Provider value={value}>{children}</UiStateContext.Provider>
+  );
+};
 
-          {children}
-      </UiStateContext.Provider>
-  )
-}
-
-export const useStateContext = () => useContext(UiStateContext)
+export const useStateContext = () => useContext(UiStateContext);
