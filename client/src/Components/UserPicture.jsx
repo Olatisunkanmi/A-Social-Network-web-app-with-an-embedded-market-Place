@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const UserPicture = () => {
 	return (
 		<div>
-			<Link to='/444'>
+			<Link to='/profile/12'>
 				<img
 					src={img}
 					alt=''
