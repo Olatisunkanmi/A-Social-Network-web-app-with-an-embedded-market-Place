@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { EachRecommend, DeleteWidget, MoreVertIcon } from './index';
 
+document.addEventListener('click', () => {});
+
 const RecommendedPages = () => {
 	const [deleteWidget, setdeleteWidget] = useState(false);
 	const [ToggleDelete, setToggleDelete] = useState(false);
