@@ -13,7 +13,6 @@ const ProfileMain = () => {
 		<div>
 			<div className='m-auto  lg:w-3/4'>
 				{/**   Background Image   */}
-
 				<div>
 					<img
 						src={imgBk}
@@ -21,9 +20,7 @@ const ProfileMain = () => {
 						className='w-full object-cover max-h-72  '
 					/>
 				</div>
-
 				{/**   BIO  */}
-
 				<div className='flex flex-row justify-around p-5'>
 					<div className='w-1/4'></div>
 
@@ -32,30 +29,24 @@ const ProfileMain = () => {
 
 						<div className='flex flex-row space-x-7 text-lg'>
 							<Link to=''>
-								{' '}
 								<p className='cursor-pointer'>
-									{' '}
 									<span> 190</span> Posts
 								</p>
 							</Link>
 							<Link to=''>
-								{' '}
 								<p className='cursor-pointer'>
-									{' '}
 									<span>290K</span> Followers
 								</p>
 							</Link>
 							<Link to=''>
 								<p className='cursor-pointer'>
-									{' '}
-									<span>104 </span> Following{' '}
-								</p>{' '}
+									<span>104 </span> Following
+								</p>
 							</Link>
 						</div>
 
 						<div className='text-left text-lg text-serif font-semibold'>
 							<p>
-								{' '}
 								Software Developer | Developer Advocate. Lorem ipsum
 								dolor sit amet consectetur adipisicing elit. Molestiae
 								dolore ex suscipit deleniti vitae culpa unde vero
@@ -66,20 +57,18 @@ const ProfileMain = () => {
 
 					<div className='w-1/4 text-center'>
 						<button className='bg-green-300 px-7 py-1 rounded-lg font-serif cursor-pointer text-lg'>
-							{' '}
-							Follow{' '}
+							Follow
 						</button>
 					</div>
 				</div>
-
 				{/** End of   BIO  */}
 
+				{/**Side Componets */}
 				<div className='w-full flex-row flex space-x-5'>
 					<div className='w-2/6 space-y-5'>
 						<div className='bg-white rounded-xl p-3 justify-between flex flex-row mb-5'>
 							<p className='text-xl font-normal font-serif'>
-								{' '}
-								User Side Components{' '}
+								User Side Components
 							</p>
 
 							<MoreVertIcon />
@@ -100,18 +89,14 @@ const ProfileMain = () => {
 
 								<div className='flex flex-row'>
 									<button>
-										{' '}
 										<p className='p-2 border-2 border-blue-400 text-black font-thin rounded-lg m-1'>
-											{' '}
-											Recents{' '}
+											Recents
 										</p>
 									</button>
 									<button>
-										{' '}
 										<p className='p-2 border-2 border-black text-black font-thin rounded-lg m-1'>
-											{' '}
-											Popular{' '}
-										</p>{' '}
+											Popular
+										</p>
 									</button>
 								</div>
 							</div>
