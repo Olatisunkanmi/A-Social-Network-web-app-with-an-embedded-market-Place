@@ -93,30 +93,12 @@ const Upload = () => {
 					</div>
 				</div>
 
-				<div className='lg:flex hidden flex-row items-center rounded-full bg-stone-200 cursor-pointer p-2'>
-					<TagFaces className='media-icons' />
-					<p className='font-thin font-serif  ml-1'> Activity </p>
+				<div
+					className='p-2 float-right bg-blue-500  cursor-pointer 
+							rounded-md text-white font-mono font-bold'
+				>
+					<button className=''>Post</button>
 				</div>
-
-				<div className='lg:flex hidden flex-row items-center rounded-full bg-stone-200 cursor-pointer p-2'>
-					<LocationOn className='media-icons' />
-					<p className='font-thin font-serif  '> Location </p>
-				</div>
-
-				<div className='flex flex-row items-center rounded-full bg-stone-200 cursor-pointer p-2'>
-					<LocalOfferOutlined className='media-icons' />
-					<p className='font-thin font-serif  ml-1'> Tag Friends </p>
-				</div>
-
-				<div className='flex flex-row items-center rounded-full bg-stone-200 cursor-pointer p-2'>
-					<MoreHorizOutlined />
-				</div>
-			</div>
-			<div
-				className='p-2 float-right bg-blue-500  cursor-pointer 
-rounded-md text-white font-mono font-bold'
-			>
-				<button className=''>Post</button>
 			</div>
 		</div>
 	);
