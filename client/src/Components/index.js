@@ -20,3 +20,7 @@ export { default as AddStory } from './AddStory';
 export { default as UserPhotoComp } from './UserPhotoComp';
 export { default as PhotosCollection } from './PhotosCollection';
 export { default as UserShopComp } from './UserShopComp';
+export { default as CartProduct } from './CartProduct';
+export { default as EachCartItem } from './EachCartItem';
+export { default as OrderDetails } from './OrderDetails';
+export { default as HelpDesk } from './HelpDesk';
