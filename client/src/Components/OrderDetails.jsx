@@ -1,0 +1,43 @@
+import React from 'react';
+
+const OrderDetails = () => {
+	return (
+		<div className='border-2 bg-white border-neutral-400 rounded-2xl w-full p-6 space-y-5'>
+			<div className='flex flex-row justify-between'>
+				<p className='text-md text-neutral-600 font-semibold'>
+					Sub-Total
+				</p>
+				<p>
+					# <span className='font-bold '> 200,000</span>
+				</p>
+			</div>
+
+			<div className='flex flex-row justify-between'>
+				<p className='text-md text-neutral-600 font-semibold'>
+					Shipping{' '}
+				</p>
+				<p>
+					<span>Nil </span>
+				</p>
+			</div>
+
+			<div className='flex flex-row justify-between'>
+				<p className='text-md text-neutral-600 font-semibold'>
+					Taxes{' '}
+				</p>
+				<p>
+					# <span className='font-bold '> 200</span>
+				</p>
+			</div>
+
+			<div className='flex flex-row justify-between'>
+				<p className='text-black font-bold text-md'> Total</p>
+				<p>
+					# <span className='font-bold '> 200, 000</span>
+				</p>
+			</div>
+		</div>
+	);
+};
+
+export default OrderDetails;
