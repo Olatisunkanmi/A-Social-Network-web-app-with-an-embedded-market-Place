@@ -1,15 +1,18 @@
 import React from 'react';
 import { PhotosCollection, MoreVertIcon } from './index';
 import PicArr from './Picture';
+import { Link } from 'react-router-dom';
 
 const UserShopComp = () => {
 	return (
 		<div>
 			<div className='w-full bg-white border-2 p-5 rounded-xl'>
 				<div className='mb-2'>
-					<p className='text-lg font-serif font-semibold'>
-						Shop From Iris Davis Store{' '}
-					</p>
+					<Link to='/'>
+						<p className='text-lg font-serif font-semibold'>
+							Shop From Iris Davis Store
+						</p>
+					</Link>
 					<p className='mb-7 h-1 bg-zinc-700 border-none w-8'></p>
 				</div>
 
