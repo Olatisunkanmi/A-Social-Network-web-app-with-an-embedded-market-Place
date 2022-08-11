@@ -20,14 +20,13 @@ const Update = () => {
 							className='text-black
                                     font-serif text-lg'
 						>
-							Dan Walker{' '}
+							Dan Walker
 						</p>
 						<p
 							className='text-stone-500
                                         font-mono text-xs'
 						>
-							{' '}
-							July 26 2018, 01:34pm{' '}
+							July 26 2018, 01:34pm
 						</p>
 					</div>
 				</div>
@@ -36,10 +35,9 @@ const Update = () => {
 
 			<div className='mt-3 text-base font-medium'>
 				<p>
-					{' '}
 					Yesterday with @Karen Miller and @Marvin Stemperd at the
 					#Rock'n'Rolla concert in LA. Was totally fantastic! People
-					were really excited about this one!{' '}
+					were really excited about this one!
 				</p>
 
 				<img src={img1} alt='' className='rounded-xl mt-5' />
@@ -62,7 +60,6 @@ const Update = () => {
 						className='text-stone-500 
                                                     font-thin text-xs'
 					>
-						{' '}
 						and 23 Others liked this picture
 					</p>
 				</div>
