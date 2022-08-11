@@ -8,7 +8,7 @@ const UserShopComp = () => {
 		<div>
 			<div className='w-full bg-white border-2 p-5 rounded-xl'>
 				<div className='mb-2'>
-					<Link to='/'>
+					<Link to='/products/12'>
 						<p className='text-lg font-serif font-semibold'>
 							Shop From Iris Davis Store
 						</p>
