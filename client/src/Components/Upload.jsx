@@ -1,5 +1,4 @@
 import {
-
 	Camera,
 	CameraAltOutlined,
 	EditOutlined,
