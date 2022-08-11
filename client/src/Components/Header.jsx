@@ -40,43 +40,25 @@ const Header = () => {
 		>
 			<div className='flex flex-row text-white w-2/6'>
 				<p className='text-2xl text-black font-mono ml-2 capitalize'>
-					{' '}
-					{pathHeader}{' '}
+					{pathHeader}
 				</p>
 
 				<Link to='./timeline'>
 					<p className='ml-4 text-blue-700  p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'>
-						{' '}
-						<HomeOutlined />{' '}
+						<HomeOutlined />
 					</p>
 				</Link>
-				<a
-					href=''
-					className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'
-				>
-					{' '}
-					<Notifications />{' '}
+				<a className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'>
+					<Notifications />
 				</a>
-				<a
-					href=''
-					className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'
-				>
-					{' '}
-					<Email />{' '}
+				<a className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'>
+					<Email />
 				</a>
-				<a
-					href=''
-					className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'
-				>
-					{' '}
-					<ChatBubble />{' '}
+				<a className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'>
+					<ChatBubble />
 				</a>
-				<a
-					href=''
-					className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'
-				>
-					{' '}
-					<GridOnOutlined />{' '}
+				<a className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'>
+					<GridOnOutlined />
 				</a>
 			</div>
 
@@ -86,7 +68,6 @@ const Header = () => {
 					<input
 						type='text'
 						placeholder='Search'
-						id=''
 						className='p-2
                                  border-2 font-semibold  text-black outline-blue-700
                                 placeholder:text-black 
@@ -95,15 +76,9 @@ const Header = () => {
 				</div>
 
 				<div className='flex flex-row text-white items-center'>
-					<Link to='./products'>
-						<p
-							href=''
-							className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'
-						>
-							{' '}
-							<LocalGroceryStoreOutlined />{' '}
-						</p>
-					</Link>
+					<p className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'>
+						<LocalGroceryStoreOutlined />
+					</p>
 
 					<UserPicture className=' text-blue-700' />
 				</div>
