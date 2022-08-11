@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 
 const ProductGrid = () => {
+
 	return (
 		<div className='w-full my-5 flex flex-col'>
 			<div className='flex flex-row items-center justify-between w-full p-2'>
