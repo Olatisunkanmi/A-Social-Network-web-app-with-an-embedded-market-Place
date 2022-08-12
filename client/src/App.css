@@ -27,3 +27,8 @@
 .story-icon:hover {
 	color: blue;
 }
+
+.checkout-btn {
+	font-size: 15px !important;
+	font-weight: 600;
+}
