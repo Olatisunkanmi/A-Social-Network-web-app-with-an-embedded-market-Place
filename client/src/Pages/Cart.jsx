@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
 	CartProduct,
 	OrderDetails,
@@ -18,9 +19,11 @@ const Cart = () => {
 				<div className='flex flex-row items-center space-x-3 text-sm'>
 					<p className='font-semibold'>save order </p>
 
-					<button className='py-2 px-4 rounded-xl text-white font-semibold hover:bg-blue-400 bg-blue-600'>
-						Checkout
-					</button>
+					<Link to='/checkout/2'>
+						<button className='py-2 px-4 rounded-xl text-white font-semibold hover:bg-blue-400 bg-blue-600'>
+							Checkout
+						</button>
+					</Link>
 				</div>
 			</div>
 
