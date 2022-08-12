@@ -26,3 +26,4 @@ export { default as OrderDetails } from './OrderDetails';
 export { default as HelpDesk } from './HelpDesk';
 export { default as CartProductSmallDevices } from './CartProductSmallDevices';
 export { default as CheckoutItem } from './CheckoutItem';
+export { default as CheckoutOrderDetais } from './CheckoutOrderDetais';
