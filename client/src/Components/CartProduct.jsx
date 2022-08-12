@@ -1,5 +1,5 @@
 import React from 'react';
-import { EachCartItem } from './index';
+import { CheckoutItem } from './index';
 
 const CartProduct = () => {
 	return (
@@ -11,25 +11,26 @@ const CartProduct = () => {
 					</p>
 				</div>
 
-				<div className='flex flex-row justify-around space-x-10 px-5'>
-					<h6 className='text-xs text-neutral-600 font-semibold'>
+				<ul className='flex flex-row justify-between  w-3/6 items-center text-center px-1'>
+					<li className='text-xs text-neutral-600 font-bold'>
 						QUANTITY
-					</h6>
-					<h6 className='text-xs text-neutral-600 font-semibold'>
-						PRICE
-					</h6>
-					<h6 className='text-xs text-neutral-600 font-semibold'>
+					</li>
+
+					<li className='text-xs text-neutral-600 font-bold'>
+						PRICE / COST
+					</li>
+
+					<li className='text-xs text-neutral-600 font-bold'>
 						DISCOUNT
-					</h6>
-					<h6 className='text-xs text-neutral-600 font-semibold'>
+					</li>
+
+					<li className='text-xs text-neutral-600 font-bold'>
 						TOTAL
-					</h6>
-				</div>
+					</li>
+				</ul>
 			</div>
 
-			<EachCartItem />
-			<EachCartItem />
-			<EachCartItem />
+			<CheckoutItem />
 		</div>
 	);
 };
