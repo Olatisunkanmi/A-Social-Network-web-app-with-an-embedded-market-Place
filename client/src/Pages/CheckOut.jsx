@@ -4,7 +4,7 @@ import '../App.css';
 import { Link } from 'react-router-dom';
 import {
 	CartProduct,
-	OrderDetails,
+	CheckoutOrderDetais,
 	CartProductSmallDevices,
 } from '../Components/index';
 
@@ -42,7 +42,8 @@ const Cart = () => {
 					<p className='text-md font-semibold text-neutral-600'>
 						Order Summary
 					</p>
-					<OrderDetails />
+
+					<CheckoutOrderDetais />
 				</div>
 			</div>
 		</div>
