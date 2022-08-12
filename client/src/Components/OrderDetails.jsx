@@ -2,7 +2,7 @@ import React from 'react';
 
 const OrderDetails = () => {
 	return (
-		<div className='border-2 bg-white border-neutral-400 rounded-2xl w-full p-6 space-y-5'>
+		<div className='border-2 bg-white border-neutral-400 rounded-2xl w-full p-6 md:space-y-5'>
 			<div className='flex flex-row justify-between'>
 				<p className='text-md text-neutral-600 font-semibold'>
 					Sub-Total
