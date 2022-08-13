@@ -14,8 +14,7 @@ const EachCartItem = () => {
 
 				<ul className='flex flex-row justify-between  w-3/6 items-center text-center'>
 					<li className='text-xs p-5 border-l text-neutral-600 font-bold'>
-						{' '}
-						1{' '}
+						1
 					</li>
 
 					<li className='text-xs p-5 border-l text-neutral-600 font-bold justify-self-end'>
@@ -27,7 +26,7 @@ const EachCartItem = () => {
 						0{' '}
 					</li>
 
-					<li className='text-xs p-5  border-l text-neutral-600 font-bold pr-2'>
+					<li className='text-xs p-5  border-l text-neutral-600 font-bold pr-'>
 						# <span> 10, 000</span>
 					</li>
 				</ul>
