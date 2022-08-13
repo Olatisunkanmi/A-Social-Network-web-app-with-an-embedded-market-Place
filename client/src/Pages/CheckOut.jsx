@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import {
 	CheckOutProduct,
 	CheckoutOrderDetais,
-	CartProductSmallDevices,
 } from '../Components/index';
 
 const Cart = () => {
