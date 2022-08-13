@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const OrderDetails = () => {
 	return (
 		<div className='border-2 bg-white border-neutral-400 rounded-2xl w-full p-6 md:space-y-5'>
@@ -37,11 +37,13 @@ const OrderDetails = () => {
 				</p>
 			</div>
 
-			<div className='text-center bg-blue-600 rounded-xl  p-5 border-2 border-neutral-600 '>
-				<button className='font-bold text-lg text-white '>
-					Confirm & Continue
-				</button>
-			</div>
+			<Link to='/payment'>
+				<div className='text-center mt-10'>
+					<button className='font-bold text-lg text-white bg-blue-600 rounded-xl  p-5 border-2 border-neutral-500 hover:bg-blue-400  cursor-pointer '>
+						Confirm & Continue
+					</button>
+				</div>
+			</Link>
 		</div>
 	);
 };
