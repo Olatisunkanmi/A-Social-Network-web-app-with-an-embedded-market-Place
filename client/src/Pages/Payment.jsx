@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowBack } from '@material-ui/icons';
-import { ContactCard, CheckOutProduct } from '../Components/index';
+import { ContactCard } from '../Components/index';
 import '../App.css';
 
 const Payment = () => {
