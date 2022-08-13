@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckoutItem } from './index';
+import { EachCartItem } from './index';
 
 const CartProduct = () => {
 	return (
@@ -30,7 +30,7 @@ const CartProduct = () => {
 				</ul>
 			</div>
 
-			<CheckoutItem />
+			<EachCartItem />
 		</div>
 	);
 };
