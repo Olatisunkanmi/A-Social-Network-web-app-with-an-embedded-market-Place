@@ -8,6 +8,7 @@ import {
 	Cart,
 	CheckOut,
 	Payment,
+	Settings,
 } from './Pages/index';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 				<Route exact path='/checkout/:id' element={<CheckOut />} />
 				<Route exact path='/payment' element={<Payment />} />
 				<Route exact path='/products/:id' element={<Products />} />
+				<Route exact path='/settings' element={<Settings />} />
 			</Routes>
 		</div>
 	);
