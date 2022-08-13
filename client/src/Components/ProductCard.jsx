@@ -3,45 +3,35 @@ import {
   LocalGroceryStoreSharp,
   MoreVertOutlined,
 } from "@material-ui/icons";
-import React from "react";
-import img1 from "../Assests/M1.jpg";
-import PicArr from "./Picture";
+import { Card, CardActions, CardContent, CardMedia } from "@material-ui/core";
 import "../App.css";
 
-const ProductCard = () => {
-  const random = PicArr[Math.floor(Math.random() * PicArr.length)];
-
+const ProductCard = ({ item }) => {
   return (
-    <div className="m-5 pro-card">
-      <div className="bg-stone-300 w-full h-full flex flex-col justify-between">
-        <div className="flex flex-col h-5/6 ">
-          <img src={random} alt="" className="object-cover w-full h-4/5" />
-          <div className="mt-3 p-2 items-center flex flex-row justify-between text-black font-serif font-bold text-lg">
-            <p> Men Leather Jacket</p>
-            <button>
-              <MoreVertOutlined className="cursor-pointer" />
-            </button>
-          </div>
-
-          <p className=" leading-6 p-3 text-sm text-shade-800 font-sans font-semibold">
-            A Strong Leather Jacket for young men, who are fashionable and
-            gentlemen.
-          </p>
-        </div>
-
-        <div className=" px-5 h-1/6 flex flex-row justify-between items-center">
-          <div className="flex flex-row items-center bg-red-500 p-2  rounded-lg">
-            <FavoriteOutlined className="text-white" />
-            <p className="text-md text-white"> 456 </p>
-          </div>
-
-          <div className="flex flex-row items-center cursor-pointer bg-blue-600 p-2 text-white rounded-lg">
+    <>
+      <Card>
+        <CardMedia
+          component="img"
+          height="140"
+          image={item.img}
+          alt={item.name}
+        />
+        <CardContent>
+          <h4 className="font-bold text-lg">{item.name}</h4>
+          <p>{item.text}</p>
+        </CardContent>
+        <CardActions className="flex flex-row justify-between">
+          <button className="flex gap-x-1 items-center cursor-pointer">
+            <FavoriteOutlined className="text-red-500" />
+            <span>{item.likes}</span>
+          </button>
+          <button className="bg-blue-400 px-2 rounded-md text-white py-1 flex gap-x-1 items-center cursor-pointer">
             <LocalGroceryStoreSharp />
-            <p> $56.23</p>
-          </div>
-        </div>
-      </div>
-    </div>
+            <span>${item.price}.00</span>
+          </button>
+        </CardActions>
+      </Card>
+    </>
   );
 };
 
