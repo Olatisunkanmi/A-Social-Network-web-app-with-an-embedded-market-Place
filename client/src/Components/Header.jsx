@@ -2,14 +2,10 @@ import {
 	ChatBubble,
 	Email,
 	HomeOutlined,
-	GridOnOutlined,
 	LocalGroceryStoreOutlined,
-	MailOutline,
 	Notifications,
-	SearchOutlined,
 	SearchRounded,
-	Shop,
-	HomeOutlinedOutlined,
+	Settings,
 } from '@material-ui/icons';
 import React from 'react';
 import { useState } from 'react';
@@ -64,21 +60,17 @@ const Header = () => {
 				<a className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'>
 					<ChatBubble />
 				</a>
-				<a className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'>
-					<GridOnOutlined />
-				</a>
 			</div>
 
 			<div className='justify-end text-white items-center flex flex-row rounded-xl  w-2/6 pr-3'>
-				<div>
-					<SearchRounded className=' text-blue-700' />
+				<div className='border-2 border-blue-700 rounded-l-lg'>
+					<button className='bg-blue-700 w-1/5 p-1'>
+						<SearchRounded className=' text-white' />
+					</button>
 					<input
 						type='text'
 						placeholder='Search'
-						className='p-2
-                                 border-2 font-semibold  text-black outline-blue-700
-                                placeholder:text-black 
-                                placeholder:font-thin rounded-xl '
+						className='w-4/5 outline-none placeholder:text-sm placeholder:text-blue-700 text-black pl-2'
 					/>
 				</div>
 
@@ -88,6 +80,10 @@ const Header = () => {
 							<LocalGroceryStoreOutlined />
 						</p>
 					</Link>
+
+					<a className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'>
+						<Settings />
+					</a>
 
 					<UserPicture className=' text-blue-700' />
 				</div>
