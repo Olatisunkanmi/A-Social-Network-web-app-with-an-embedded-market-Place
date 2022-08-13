@@ -1,7 +1,7 @@
 import React from 'react';
-import { EachCartItem } from './index';
+import { CheckoutItem } from './index';
 
-const CartProduct = () => {
+const CheckOutProduct = () => {
 	return (
 		<div className='w-full'>
 			<div className='flex flex-row justify-between items-center mb-2'>
@@ -30,9 +30,9 @@ const CartProduct = () => {
 				</ul>
 			</div>
 
-			<EachCartItem />
+			<CheckoutItem />
 		</div>
 	);
 };
 
-export default CartProduct;
+export default CheckOutProduct;
