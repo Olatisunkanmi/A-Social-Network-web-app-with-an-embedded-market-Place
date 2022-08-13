@@ -34,8 +34,8 @@ const Header = () => {
 	return (
 		<div
 			className='w-full items-center z-50 top-0 sticky p-1 flex flex-row bg-white  justify-between border-b-2 
-    product-nav
-    '
+    product-nav h-16
+     '
 		>
 			<div className='flex flex-row text-white w-2/6'>
 				<p className='text-2xl text-black font-mono ml-2 capitalize'>
@@ -81,9 +81,12 @@ const Header = () => {
 						</p>
 					</Link>
 
-					<a className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'>
+					<Link
+						to='/settings'
+						className='ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white'
+					>
 						<Settings />
-					</a>
+					</Link>
 
 					<UserPicture className=' text-blue-700' />
 				</div>
