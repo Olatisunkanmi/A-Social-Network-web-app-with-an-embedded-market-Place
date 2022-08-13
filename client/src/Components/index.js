@@ -30,3 +30,4 @@ export { default as CheckoutOrderDetais } from './CheckoutOrderDetais';
 export { default as Notification } from './Notification';
 export { default as CheckOutProduct } from './CheckOutProduct';
 export { default as ContactCard } from './ContactCard';
+export { default as SettingsSidebar } from './SettingsSidebar';
