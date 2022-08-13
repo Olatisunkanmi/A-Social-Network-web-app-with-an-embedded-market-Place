@@ -3,7 +3,7 @@ import React from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import {
-	CartProduct,
+	CheckOutProduct,
 	CheckoutOrderDetais,
 	CartProductSmallDevices,
 } from '../Components/index';
@@ -31,12 +31,10 @@ const Cart = () => {
 
 			<div className='w-full flex flex-col lg:flex-row mt-10 justify-between md:space-x-10'>
 				<div className='w-4/6 hidden md:block'>
-					<CartProduct />
+					<CheckOutProduct />
 				</div>
 
-				<div className='w-full block md:hidden p-3 space-y-3'>
-					<CartProductSmallDevices />
-				</div>
+				<div className='w-full block md:hidden p-3 space-y-3'></div>
 
 				<div className='w-full space-y-2 flex flex-col p-5 md:p-0 md:w-2/6 '>
 					<p className='text-md font-semibold text-neutral-600'>
