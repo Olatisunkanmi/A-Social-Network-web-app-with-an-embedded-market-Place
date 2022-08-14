@@ -22,7 +22,7 @@ const SettingsSidebar = () => {
 				border-l-8 border-l-blue-600'
 				>
 					<Link
-						to='./general'
+						to='./'
 						className='flex flex-row items-center space-x-3'
 					>
 						<Settings className='setting-icon' />
