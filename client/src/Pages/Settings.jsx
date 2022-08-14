@@ -11,7 +11,7 @@ const Settings = () => {
 		<div className='w-full flex flex-row'>
 			<SettingsSidebar />
 			<Routes>
-				<Route exact path='/general' element={<SettingsGeneral />} />
+				<Route exact path='/' element={<SettingsGeneral />} />
 				<Route
 					exact
 					path='/security'
