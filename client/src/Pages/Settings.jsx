@@ -1,10 +1,17 @@
 import React from 'react';
-import { SettingsSidebar, Sidebar } from '../Components/index';
+import {
+	SettingsSidebar,
+	SettingsGeneral,
+} from '../Components/index';
+import { Route, Routes } from 'react-router-dom';
 
 const Settings = () => {
 	return (
-		<div>
-			<Sidebar />
+		<div className='w-full flex flex-row'>
+			<SettingsSidebar />
+			<Routes>
+				<Route exact path='/general' element={<SettingsGeneral />} />
+			</Routes>
 		</div>
 	);
 };
