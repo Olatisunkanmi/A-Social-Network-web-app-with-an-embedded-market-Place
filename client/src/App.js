@@ -26,7 +26,7 @@ function App() {
 				<Route exact path='/checkout/:id' element={<CheckOut />} />
 				<Route exact path='/payment' element={<Payment />} />
 				<Route exact path='/products/:id' element={<Products />} />
-				<Route exact path='/settings' element={<Settings />} />
+				<Route exact path='/settings/*' element={<Settings />} />
 			</Routes>
 			<aside
 				className={`fixed ${
