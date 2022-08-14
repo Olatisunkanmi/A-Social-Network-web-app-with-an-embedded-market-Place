@@ -63,7 +63,9 @@
 }
 
 .sidebar {
-	box-shadow: 12px 2px 5px -7px rgba(115, 110, 110, 1);
-	-webkit-box-shadow: 12px 2px 5px -7px rgba(115, 110, 110, 1);
-	-moz-box-shadow: 12px 2px 5px -7px rgba(115, 110, 110, 1);
+	border: 2px solid rgb(188, 183, 183);
+	border-top: inherit;
+	border-bottom: inherit;
+	width: 14%;
+	border-top-right-radius: 20px;
 }
