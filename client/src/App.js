@@ -13,7 +13,7 @@ import {
 
 function App() {
 	return (
-		<div className='bg-neutral-100'>
+		<div className='bg-neutral-100 h-'>
 			<Header />
 			<Routes>
 				<Route exact path='/timeline' element={<Timeline />} />
@@ -23,7 +23,7 @@ function App() {
 				<Route exact path='/checkout/:id' element={<CheckOut />} />
 				<Route exact path='/payment' element={<Payment />} />
 				<Route exact path='/products/:id' element={<Products />} />
-				<Route exact path='/settings' element={<Settings />} />
+				<Route exact path='/settings/*' element={<Settings />} />
 			</Routes>
 		</div>
 	);
