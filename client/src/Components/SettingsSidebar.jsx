@@ -6,7 +6,7 @@ import '../App.css';
 
 const SettingsSidebar = () => {
 	return (
-		<div className=' flex flex-col  bg-white justify-between first-letter:'>
+		<div className=' flex flex-col   justify-between '>
 			<div className='flex flex-col  items-center mt-5 space-y-3'>
 				<UserPicture />
 				<p className='text-xl font-semibold font-serif '>
@@ -32,7 +32,7 @@ const SettingsSidebar = () => {
 
 				<div
 					className='flex flex-row  font-sans  space-x-3 text-md font-bold  text-stone-600   w-full  pl-5 py-3 
-				border-l-8 border-l-blue-600'
+				border-l-8 border-l-none'
 				>
 					<Link
 						to='./security'
