@@ -14,12 +14,12 @@ const Timeline = () => {
 	return (
 		<div className=''>
 			<div
-				className='m-auto 
-              
-                    w-4/5
+				className='md:m-auto
+                    w-full
                     xl:w-3/4
                    flex flex-col 
-                  lg:flex-row justify-center p-5 mt-5'
+				   space-y-5
+                  lg:flex-row justify-center md:p-5 mt-5'
 			>
 				<div
 					className='hidden 
@@ -34,6 +34,7 @@ const Timeline = () => {
 				{/** Feed Section  */}
 				<div
 					className='
+								
                                 xl:block
                                space-y-5
                                 lg:w-2/4 
@@ -48,6 +49,7 @@ const Timeline = () => {
 
 				<div
 					className='
+
                             space-y-5
                               lg:w-1/4 '
 				>
