@@ -102,7 +102,7 @@ const SettingsGeneral = () => {
 				</div>
 
 				<div className=' mt-4 lg:mt-10 lg:space-x-2 w-full '>
-					<button className='py-3 m-1 text-white font-semibold  rounded-xl  px-7 bg-blue-500'>
+					<button className='py-3 text-white font-semibold  rounded-xl  px-7 bg-blue-500'>
 						{' '}
 						Save Changes{' '}
 					</button>
@@ -113,8 +113,8 @@ const SettingsGeneral = () => {
 				</div>
 			</div>
 
-			<div className='hidden p-10 lg:w-3/4 lg:block '>
-				<img src={img} alt='' className='w-full' />
+			<div className='hidden p-10 xl:w-3/4 xl:block '>
+				<img src={img} alt='' className='w-full ' />
 			</div>
 		</div>
 	);
