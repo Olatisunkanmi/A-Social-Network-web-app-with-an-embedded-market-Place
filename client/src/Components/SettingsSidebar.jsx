@@ -6,7 +6,7 @@ import '../App.css';
 
 const SettingsSidebar = () => {
 	return (
-		<div className=' flex flex-col sidebar  bg-white'>
+		<div className=' flex flex-col  bg-white justify-between first-letter:'>
 			<div className='flex flex-col  items-center mt-5 space-y-3'>
 				<UserPicture />
 				<p className='text-xl font-semibold font-serif '>
@@ -41,32 +41,6 @@ const SettingsSidebar = () => {
 						<Policy className='setting-icon' />
 						<p className='tracking-widest'> Security </p>
 					</Link>
-				</div>
-
-				<div
-					className='flex flex-row items-center font-sans  space-x-3 text-md font-bold cursor-pointer text-stone-600   w-full pl-5  py-3 
-				border-l-8'
-				>
-					<Warning className='setting-icon' />
-					<p className='tracking-widest'> Account </p>
-				</div>
-
-				<hr className='my-5 mx-16 w-3/6 border-neutral-300' />
-
-				<div
-					className='flex flex-row items-center font-sans  space-x-3 text-md font-bold cursor-pointer text-stone-600   w-full pl-5 py-3 
-				border-l-8 '
-				>
-					<Policy className='setting-icon' />
-					<p className='tracking-widest'> Privacy </p>
-				</div>
-
-				<div
-					className='flex flex-row items-center font-sans  space-x-3 text-md font-bold cursor-pointer text-stone-600   w-full pl-5  py-3 
-				border-l-8'
-				>
-					<Warning className='setting-icon' />
-					<p className='tracking-widest'> Prefrence </p>
 				</div>
 
 				<hr className='my-5 mx-16 w-3/6 border-neutral-300' />
