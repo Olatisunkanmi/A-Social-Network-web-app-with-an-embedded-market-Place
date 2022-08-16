@@ -3,6 +3,7 @@ import {
 	SettingsSidebar,
 	SettingsGeneral,
 	SettingsSecurity,
+	SettingsNotification,
 } from '../Components/index';
 import { Route, Routes } from 'react-router-dom';
 import '../App.css';
@@ -21,6 +22,11 @@ const Settings = () => {
 						exact
 						path='/security'
 						element={<SettingsSecurity />}
+					/>
+					<Route
+						exact
+						path='/notification'
+						element={<SettingsNotification />}
 					/>
 				</Routes>
 			</div>
