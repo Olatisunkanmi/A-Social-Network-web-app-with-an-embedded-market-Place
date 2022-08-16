@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useReducer } from "react";
 import { productsData } from "../data/data";
-import axios from "axios";
+import { productReducer } from "./Reducer";
 
 const UiStateContext = createContext();
 
@@ -11,20 +11,21 @@ const initialState = {
   notification: false,
 };
 
-let reducer;
-
 export const Context = ({ children }) => {
   const [Widget, setWidget] = useState(false);
 
   // product and cart state
-  const [productState, productDispatch] = useReducer(reducer, {
+  const [productState, productDispatch] = useReducer(productReducer, {
     product: productsData,
+    cart: [],
   });
+  console.log(productState.cart);
 
   const value = {
     Widget,
     setWidget,
     productState,
+    productDispatch,
   };
 
   return (
