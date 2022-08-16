@@ -16,8 +16,8 @@ import { Link, useLocation } from "react-router-dom";
 import "../App.css";
 
 const Header = ({ setSidebar }) => {
-  const [colorChange, setColorChange] = useState(false);
-  const [toggleNotificaton, setToggleNotification] = useState(false);
+  const [colorChange, setColorChange] = useState(true);
+  const [toggleNotification, setToggleNotification] = useState(false);
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 70) {
@@ -32,7 +32,7 @@ const Header = ({ setSidebar }) => {
   const pathHeader = useLocation().pathname.split("/")[1];
 
   return (
-    <>
+    <div className="relative">
       <div className="w-full items-center z-50 top-0 sticky p-1 hidden md:flex flex-row bg-white  justify-between border-b-2 product-nav h-16">
         <div className="flex flex-row text-white w-2/6">
           <p className="text-2xl text-black font-mono ml-2 capitalize">
@@ -45,11 +45,10 @@ const Header = ({ setSidebar }) => {
             </p>
           </Link>
           <a
-            className="ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white relative"
-            onClick={() => setToggleNotification(!toggleNotificaton)}
+            className="ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white"
+            onClick={() => setToggleNotification(!toggleNotification)}
           >
             <Notifications />
-            {toggleNotificaton && <Notification />}
           </a>
           <a className="ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white">
             <Email />
@@ -94,11 +93,10 @@ const Header = ({ setSidebar }) => {
         </p>
         <div className="flex items-center gap-x-6">
           <a
-            className="ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white relative"
-            onClick={() => setToggleNotification(!toggleNotificaton)}
+            className="ml-4 text-blue-700 p-1 hover:rounded-md hover:bg-blue-700 hover:text-white"
+            onClick={() => setToggleNotification(!toggleNotification)}
           >
             <Notifications />
-            {toggleNotificaton && <Notification />}
           </a>
           <div
             onClick={() => {
@@ -109,7 +107,8 @@ const Header = ({ setSidebar }) => {
           </div>
         </div>
       </div>
-    </>
+      {toggleNotification && <Notification />}
+    </div>
   );
 };
 export default Header;
