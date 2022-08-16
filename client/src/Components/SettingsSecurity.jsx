@@ -105,7 +105,7 @@ const SettingsSecurity = () => {
 			</div>
 
 			<div className='hidden p-10 xl:w-3/4 xl:block '>
-				<img src={img} alt='' className='w-full ' />
+				<img src={img} alt='' className='w-3/4 m-auto' />
 			</div>
 		</div>
 	);
