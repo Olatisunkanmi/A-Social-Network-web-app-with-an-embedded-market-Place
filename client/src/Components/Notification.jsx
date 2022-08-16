@@ -4,7 +4,7 @@ import { notificationData } from "../data/data";
 
 const Notification = () => {
   return (
-    <div className="absolute -bottom-[350px] bg-white w-80 text-black px-3">
+    <div className="absolute z-50 right-10 md:left-36 bg-white w-72 md:w-80 text-black px-3">
       <div className="flex justify-between py-4 border-b">
         <h5 className="">Notifications</h5>
         <Notifications />
