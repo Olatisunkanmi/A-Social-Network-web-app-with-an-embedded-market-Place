@@ -34,3 +34,4 @@ export { default as ContactCard } from './ContactCard';
 export { default as SettingsSidebar } from './SettingsSidebar';
 export { default as SettingsGeneral } from './SettingsGeneral';
 export { default as SettingsSecurity } from './SettingsSecurity';
+export { default as SettingsNotification } from './SettingsNotification';
