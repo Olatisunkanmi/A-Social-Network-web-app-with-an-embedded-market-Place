@@ -114,9 +114,9 @@ const ProfileMain = () => {
 						</div>
 
 						<div className='w-full text-left flex flex-row'>
-							<div className='w-1/12'> </div>
+							<div className='hidden md:block md:w-1/12'> </div>
 
-							<div className='w-11/12 justify-self-end'>
+							<div className=' w-full md:w-11/12 justify-self-end'>
 								<Update />
 							</div>
 						</div>
