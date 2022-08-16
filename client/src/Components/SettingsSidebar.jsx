@@ -46,11 +46,16 @@ const SettingsSidebar = () => {
 				<hr className='my-5 mx-16 w-3/6 border-neutral-300' />
 
 				<div
-					className='flex flex-row items-center font-sans  space-x-3 text-md font-bold cursor-pointer text-stone-600   w-full pl-5 py-3 
-				border-l-8 '
+					className='flex flex-row  font-sans  space-x-3 text-md font-bold  text-stone-600   w-full  pl-5 py-3 
+			border-l-8 border-l-none'
 				>
-					<Policy className='setting-icon' />
-					<p className='tracking-widest'> Notification </p>
+					<Link
+						to='./notification'
+						className='flex flex-row items-center space-x-3'
+					>
+						<Policy className='setting-icon' />
+						<p className='tracking-widest'> Notification </p>
+					</Link>
 				</div>
 
 				<div
