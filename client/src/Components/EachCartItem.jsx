@@ -1,7 +1,8 @@
 import React from "react";
-import product from "../Assests/pro.png";
+import { useStateContext } from "../Contexts/Context";
 
 const EachCartItem = ({ item }) => {
+  const value = useStateContext();
   return (
     <div className="w-full mt-2 bg-white rounded-lg border-2 border-neutral-400">
       <div className="flex flex-row justify-between items-center py-5 ">
@@ -16,19 +17,39 @@ const EachCartItem = ({ item }) => {
                     p-1 px-2
                     font-bold space-x-2 border-2 rounded-full items-center"
           >
-            <button className="text-neutral-600 "> + </button>
+            <button
+              className="text-neutral-600"
+              onClick={() => {
+                value.productDispatch({
+                  type: "INCREASE_QUANTITY",
+                  payload: item,
+                });
+              }}
+            >
+              +
+            </button>
             <p className="text-neutral-600 ">{item.qty}</p>
-            <button className="text-neutral-600 "> - </button>
+            <button
+              className="text-neutral-600"
+              onClick={() => {
+                value.productDispatch({
+                  type: "DECREASE_QUANTITY",
+                  payload: item,
+                });
+              }}
+            >
+              -
+            </button>
           </div>
 
           <h6 className="text-xs text-neutral-600 font-bold">
             ${item.price}.00
           </h6>
 
-          <h6 className="text-xs  font-bold">100</h6>
+          <h6 className="text-xs  font-bold">00</h6>
 
           <h6 className="text-xs text-black font-bold">
-            # <span> 200, 000</span>
+            ${item.price * item.qty}.00
           </h6>
         </div>
       </div>
