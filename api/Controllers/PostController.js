@@ -4,6 +4,14 @@ const PostArr = JSON.parse(
 	fs.readFileSync(`${__dirname}/../data/user.json`),
 );
 
+// ---Middleware to check if (:id ) is available
+
+expor.checkID = (req, res, next) => {
+	console.log(req.body);
+
+	next();
+};
+
 // 	-------------CREATinig First APi ---Posts
 
 // ----------------------------------------------Get all posts    Details
