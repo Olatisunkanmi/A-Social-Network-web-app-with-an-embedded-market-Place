@@ -1,45 +1,15 @@
 const express = require('express');
 const router = express.Router();
+const UserController = require('../Controllers/UserController');
 
-// 	-------------CREATinig Second APi ---User
+router
+	.route('/')
+	.get(UserController.getAllUsers)
+	.post(UserController.createUser);
 
-// 			---------Get all Users ?
-router.get('/', async (req, res) => {
-	res.status(500).json({
-		status: 'Error',
-		message: 'Users absent',
-	});
-});
-// ----------------Create USer
-router.post('/', async (req, res) => {
-	res.status(500).json({
-		status: 'Error',
-		message: 'Users absent',
-	});
-});
-
-// 	----------GET  A User
-router.get('/:id/', async (req, res) => {
-	res.status(500).json({
-		status: 'Error',
-		message: 'Users absent',
-	});
-});
-
-// -------------Update a User
-router.patch('/:id/', async (req, res) => {
-	res.status(500).json({
-		status: 'Error',
-		message: 'Users absent',
-	});
-});
-
-// 	----------Delete  A User
-router.delete('/:id/', async (req, res) => {
-	res.status(500).json({
-		status: 'Error',
-		message: 'Users absent',
-	});
-});
-
+router
+	.route('/:id')
+	.get(UserController.getUser)
+	.patch(UserController.updateUser)
+	.delete(UserController.deleteUser);
 module.exports = router;
