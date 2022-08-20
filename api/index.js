@@ -71,6 +71,14 @@ app.get('/api/v1/posts/:id', async (req, res) => {
 	});
 });
 
+// ------------------------------------------Update Post
+app.patch('/api/v1/posts/:id', async (req, res) => {
+	res.status(500).json({
+		status: 'Error',
+		message: 'Post absent',
+	});
+});
+
 // ----------------------------------------------Deete post
 
 app.delete('/api/v1/posts/:id', async (req, res) => {
@@ -97,32 +105,78 @@ app.get('/api/v1/users', async (req, res) => {
 		message: 'Users absent',
 	});
 });
-
 // ----------------Create USer
-app.post('api/v2/users', (req, res) => {
+app.post('/api/v1/users/', async (req, res) => {
 	res.status(500).json({
-		status: 'Not yet Created',
-		message: 'User absent',
+		status: 'Error',
+		message: 'Users absent',
+	});
+});
+
+// 	----------GET  A User
+app.get('/api/v1/users/:id/', async (req, res) => {
+	res.status(500).json({
+		status: 'Error',
+		message: 'Users absent',
 	});
 });
 
 // -------------Update a User
-app.patch('api/v2/users/:id', (req, res) => {
+app.patch('/api/v1/users/:id/', async (req, res) => {
 	res.status(500).json({
-		status: 'Not yet Created',
-		message: 'User absent',
+		status: 'Error',
+		message: 'Users absent',
 	});
 });
 
 // 	----------Delete  A User
-app.delete('api/v2/users/:id', (req, res) => {
+app.delete('/api/v1/users/:id/', async (req, res) => {
 	res.status(500).json({
-		status: 'Not yet Created',
-		message: 'User absent',
+		status: 'Error',
+		message: 'Users absent',
 	});
 });
 
 // 	-------------CREATinig Third  APi ---	Shop Items
+
+// -------------------------------Get al Products
+app.get('/api/v1/products/', async (req, res) => {
+	res.status(500).json({
+		status: 'Error',
+		message: 'products absent',
+	});
+});
+
+// -------------------------------Create  a Product
+app.post('/api/v1/products/', async (req, res) => {
+	res.status(500).json({
+		status: 'Error',
+		message: 'products absent',
+	});
+});
+
+// -------------------------------get a Product
+app.get('/api/v1/products/:id/', async (req, res) => {
+	res.status(500).json({
+		status: 'Error',
+		message: 'products absent',
+	});
+});
+
+// -------------------------------Update a Product
+app.patch('/api/v1/products/:id/', async (req, res) => {
+	res.status(500).json({
+		status: 'Error',
+		message: 'products absent',
+	});
+});
+// -------------------------------Delete a Products
+app.delete('/api/v1/products/:id/', async (req, res) => {
+	res.status(500).json({
+		status: 'Error',
+		message: 'products absent',
+	});
+});
 
 // 	------------------- PORT CONNECTION
 const port = process.env.Port || 2000;
