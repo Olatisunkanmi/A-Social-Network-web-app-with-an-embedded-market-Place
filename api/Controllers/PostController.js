@@ -6,7 +6,8 @@ const PostArr = JSON.parse(
 
 // ---Middleware to check if (:id ) is available
 
-expor.checkID = (req, res, next) => {
+// ! CHECHKID MIDDLWARE INCOMPLETE BUT WORKS
+exports.checkID = (req, res, next) => {
 	console.log(req.body);
 
 	next();
