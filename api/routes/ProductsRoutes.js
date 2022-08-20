@@ -1,45 +1,16 @@
 const express = require('express');
 const router = express.Router();
+const ProductController = require('../Controllers/ProductsController');
+// const {
+// 	getAllProducts,
+// } = require('../Controllers/ProductsController');
+// const { getAllProducts } = require('../Controllers/FakeMiddleware  ');
+const FakeMiddleWare = require('../Controllers/FakeMiddleware');
 
-// 	-------------CREATinig Third  APi ---	Shop Items
+// router.route('/').get(ProductController.getAllProducts);
 
-// -------------------------------Get al Products
-router.get('/', async (req, res) => {
-	res.status(500).json({
-		status: 'Error',
-		message: 'products absent',
-	});
-});
+console.log(typeof FakeMiddleWare.CHECK);
+router.route('/').get(FakeMiddleWare.CHECK, FakeMiddleWare.CH);
 
-// -------------------------------Create  a Product
-router.post('/', async (req, res) => {
-	res.status(500).json({
-		status: 'Error',
-		message: 'products absent',
-	});
-});
-
-// -------------------------------get a Product
-router.get('/:id/', async (req, res) => {
-	res.status(500).json({
-		status: 'Error',
-		message: 'products absent',
-	});
-});
-
-// -------------------------------Update a Product
-router.patch('/:id/', async (req, res) => {
-	res.status(500).json({
-		status: 'Error',
-		message: 'products absent',
-	});
-});
-// -------------------------------Delete a Products
-router.delete('/:id/', async (req, res) => {
-	res.status(500).json({
-		status: 'Error',
-		message: 'products absent',
-	});
-});
-
+// ! COMPLETE   ROUTE FOR PRODUCTS . !!!!!!!!!!!!!
 module.exports = router;
