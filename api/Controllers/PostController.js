@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const PostArr = JSON.parse(
+let User = JSON.parse(
 	fs.readFileSync(`${__dirname}/../data/user.json`),
 );
 
@@ -19,61 +19,44 @@ exports.checkID = (req, res, next) => {
 exports.getallposts = (req, res) => {
 	res.status(200).json({
 		status: 'Sucess',
-		results: PostArr.length,
+		// results: User.length,
 		data: {
-			posts: PostArr,
+			posts: User,
 		},
 	});
 };
 
 // ------------------Create POst
 
-exports.createposts = (req, res) => {
-	//   console.log(req.body);
-
-	const newId = PostArr[PostArr.length - 1].id + 1;
-	console.log(newId);
-
-	//  New data Forged ???~
-	const newPost = Object.assign({ id: newId }, req.body);
-	console.log(newPost);
-	PostArr.push(newPost);
-
-	fs.writeFile(
-		`${__dirname}/dev-data/data/AllUserArr-simple.json`,
-		JSON.stringify(PostArr),
-		(err) => {
-			res.status(201).json({
-				status: 'success Again',
-				data: {
-					tour: newPost,
-				},
-			});
-		},
-	);
-};
-
-// ----------------------------------------------Get post by Id
-
-exports.getsingleposts = (req, res) => {
-	const id = req.params.id * 1;
-	const UserArr = PostArr.find((cur) => cur.id === id);
-
-	if (!UserArr) {
-		res.status(404).json({
-			status: 'Not Found',
-			message: 'Invalid POst Id ',
-		});
-	}
-
-	res.status(200).json({
-		status: 'sucess',
-		// results: UserArr.length,
+(exports.createposts = (req, res) => {
+	res.status(201).json({
+		status: 'success Again',
 		data: {
-			User: UserArr,
+			tour: 'newPost',
 		},
 	});
-};
+}),
+	// ----------------------------------------------Get post by Id
+
+	(exports.getsingleposts = (req, res) => {
+		const id = req.params.id * 1;
+		const UserArr = PostArr.find((cur) => cur.id === id);
+
+		if (!UserArr) {
+			res.status(404).json({
+				status: 'Not Found',
+				message: 'Invalid POst Id ',
+			});
+		}
+
+		res.status(200).json({
+			status: 'sucess',
+			// results: UserArr.length,
+			data: {
+				User: UserArr,
+			},
+		});
+	});
 
 // ------------------------------------------Update Post
 exports.updateposts = (req, res) => {
