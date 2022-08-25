@@ -1,12 +1,11 @@
-const express = require('express');
 const router = require('express').Router();
-
 const PostController = require('../Controllers/PostController');
 
+console.log(PostController.createPosts);
 router
 	.route('/')
-	.get(PostController.getallposts)
-	.get(PostController.createposts);
+	.get(PostController.getAllPosts)
+	.post(PostController.createPosts);
 
 router
 	.route('/:id')
