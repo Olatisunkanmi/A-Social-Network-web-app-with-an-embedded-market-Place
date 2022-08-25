@@ -1,56 +1,65 @@
-// ---Middleware to check if (:id ) is available
-
-// ! CHECHKID MIDDLWARE INCOMPLETE BUT WORKS
-exports.checkID = (req, res, next) => {
-	console.log(req.body);
-
-	next();
-};
-
-// 	-------------CREATinig First APi ---Posts
+const Posts = require('../Models/PostModel');
+const User = require('../Models/UsersModel');
 
 // ----------------------------------------------Get all posts    Details
-exports.getallposts = (req, res) => {
-	res.status(200).json({
-		status: 'Sucess',
-		// results: User.length,
-		data: {
-			posts: User,
-		},
-	});
+exports.getAllPosts = async (req, res) => {
+	try {
+		const Posts = await Posts.find();
+		res.status(200).json({
+			status: 'Sucess',
+			data: {
+				posts: Posts,
+			},
+		});
+	} catch (error) {
+		res.status(404).json({
+			status: 'Fail',
+			message: error,
+		});
+	}
 };
 
 // ------------------Create POst
+exports.createPosts = async (req, res) => {
+	console.log(req.params.id);
+	try {
+		let user = await User.find(req.params.id);
 
-(exports.createposts = (req, res) => {
-	res.status(201).json({
-		status: 'success Again',
-		data: {
-			tour: 'newPost',
-		},
-	});
-}),
-	// ----------------------------------------------Get post by Id
-
-	(exports.getsingleposts = (req, res) => {
-		const id = req.params.id * 1;
-		const UserArr = PostArr.find((cur) => cur.id === id);
-
-		if (!UserArr) {
-			res.status(404).json({
-				status: 'Not Found',
-				message: 'Invalid POst Id ',
-			});
-		}
-
-		res.status(200).json({
-			status: 'sucess',
-			// results: UserArr.length,
+		res.status(201).json({
+			status: 'success Again',
 			data: {
-				User: UserArr,
+				tour: 'newPost',
 			},
 		});
+	} catch (error) {
+		res.status(404).json({
+			status: 'Failed',
+			message: error,
+		});
+	}
+};
+
+// ----------------------------------------------Get post by Id
+
+exports.getsingleposts = (req, res) => {
+	const id = req.params.id * 1;
+	const UserArr = PostArr.find((cur) => cur.id === id);
+
+	if (!UserArr) {
+		res.status(404).json({
+			status: 'Not Found',
+			message: 'Invalid POst Id ',
+		});
+	}
+
+	res.status(200).json({
+		status: 'sucess',
+		// results: UserArr.length,
+		data: {
+			User: UserArr,
+		},
 	});
+};
 
 // ------------------------------------------Update Post
 exports.updateposts = (req, res) => {
@@ -76,5 +85,3 @@ exports.deletepost = (req, res) => {
 		data: null,
 	});
 };
-
-module.exports = exports;
