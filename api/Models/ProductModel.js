@@ -9,6 +9,10 @@ const ProductSchema = new mongoose.Schema({
 		type: Array,
 		required: [true, 'Product must have an email'],
 	},
+	username: {
+		type: String,
+		required: false,
+	},
 	price: {
 		type: Number,
 		required: true,
