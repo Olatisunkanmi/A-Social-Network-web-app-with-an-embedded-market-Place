@@ -1,9 +1,3 @@
-const fs = require('fs');
-
-let User = JSON.parse(
-	fs.readFileSync(`${__dirname}/../data/user.json`),
-);
-
 // ---Middleware to check if (:id ) is available
 
 // ! CHECHKID MIDDLWARE INCOMPLETE BUT WORKS
