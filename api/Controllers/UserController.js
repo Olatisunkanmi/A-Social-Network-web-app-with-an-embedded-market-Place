@@ -1,54 +1,85 @@
-const fs = require('fs');
-
-const Users = JSON.parse(
-	fs.readFileSync(`${__dirname}/../data/user.json`),
-);
-
+const User = require('../Models/UsersModel');
 // 	-------------CREATinig Second APi ---User
 
 // !  CREATE MIDDLEWARE TO CHECK FOR :ID
 
-// 			---------Get all Users ?
-exports.getAllUsers = (req, res) => {
-	res.status(200).json({
-		status: 'success',
-		resuilt: Users.length,
-		Data: Users,
-	});
+// 			---------Get all User ?
+exports.getAllUsers = async (req, res) => {
+	try {
+		const users = await User.find();
+		res.status(200).json({
+			status: 'success',
+			resuilt: users.length,
+			Data: {
+				Users: users,
+			},
+		});
+	} catch (error) {
+		res.status(404).json({
+			status: 'Failed',
+			message: error,
+		});
+	}
 };
 // ----------------Create USer
-exports.createUser = (req, res) => {
-	res.status(500).json({
-		status: 'Error',
-		message: 'Users absent',
-	});
+exports.createUser = async (req, res) => {
+	try {
+		const newUser = await User.create(req.body);
+		res.status(201).json({
+			status: 'Success',
+			message: 'User created',
+			data: {
+				User: newUser,
+			},
+		});
+	} catch (err) {
+		res.status(400).json({
+			status: 'Fail',
+			message: err,
+		});
+	}
 };
 
 // 	----------GET  A User
-exports.getUser = (req, res) => {
-	let id = req.params.id * 1;
-	console.log(id);
-	let user = Users.find((el) => el.index === id);
-	console.log(user);
-	res.status(200).json({
-		status: 'success',
-		resuilt: user.length,
-		Data: user,
-	});
+exports.getUser = async (req, res) => {
+	try {
+		const newUser = await User.findById(req.params.id);
+		res.status(200).json({
+			status: 'success',
+			result: newUser.length,
+			Data: newUser,
+		});
+	} catch (error) {
+		res.status(400).json({
+			status: 'Fail',
+			message: error,
+		});
+	}
 };
 
 // -------------Update a User
-exports.updateUser = (req, res) => {
-	res.status(500).json({
-		status: 'Error',
-		message: 'Users absent',
-	});
+exports.updateUser = async (req, res) => {
+	try {
+		const user = await User.findByIdAndUpdate(
+			req.params.id,
+			req.body,
+			{
+				new: true,
+				runValidators: true,
+			},
+		);
+	} catch (error) {
+		res.status(404).json({
+			status: 'Error',
+			message: error,
+		});
+	}
 };
 
 // 	----------Delete  A User
 exports.deleteUser = (req, res) => {
 	res.status(500).json({
 		status: 'Error',
-		message: 'Users absent',
+		message: 'User absent',
 	});
 };
