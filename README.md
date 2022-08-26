@@ -6,4 +6,4 @@ Stack;
   NodeJS (Express.JS) for the backend.
   
 Special Features.
--An Embedded e-commerce platform to allow users to expand their audience. 
+-An Embedded e-commerce platform to allow users to expand their audience.
