@@ -4,6 +4,19 @@ const ProductSchema = new mongoose.Schema({
 	name: {
 		type: String,
 		required: [true, 'A Product must have a name'],
+		unique: true,
+	},
+	ratingsAverage: {
+		type: Number,
+		default: 4.5,
+	},
+	ratingQuantity: {
+		type: Number,
+		default: 0,
+	},
+	price: {
+		type: Number,
+		required: [true, 'A tour must have a name'],
 	},
 	category: {
 		type: Array,
@@ -17,6 +30,7 @@ const ProductSchema = new mongoose.Schema({
 		type: Number,
 		required: true,
 	},
+	uploadedAt: [Date],
 });
 
 module.exports = mongoose.model('Product', ProductSchema);
