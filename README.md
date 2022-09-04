@@ -7,3 +7,22 @@ Stack;
   
 Special Features.
 -An Embedded e-commerce platform to allow users to expand their audience.
+
+
+## Directory Structure
+```
+├── api
+│   ├── Controllers
+│   ├── Model
+│   └── routes
+├── client
+│   ├── piblic
+│   └── src
+│       ├── Assets
+│       ├── Components
+│       ├── Pages
+│       └── data
+├── .gitignore
+├── LICENSE
+└── README.md
+```

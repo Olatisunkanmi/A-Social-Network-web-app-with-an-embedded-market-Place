@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const PostController = require('../Controllers/PostController');
 
-console.log(PostController.createPosts);
 router
 	.route('/')
 	.get(PostController.getAllPosts)
