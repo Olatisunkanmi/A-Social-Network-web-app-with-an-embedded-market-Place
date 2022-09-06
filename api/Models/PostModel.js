@@ -1,15 +1,34 @@
 const mongoose = require('mongoose');
 
-const Posts = new mongoose.Schema(
+const postSchema = new mongoose.Schema(
 	{
-		desc: {
+		post: {
 			type: String,
-			required: true,
+			required: [true, 'Post must have a desc'],
 		},
 		photo: {
 			type: String,
 			required: false,
 		},
+
+		postedBy: {
+			type: String,
+			required: true,
+			required: [true, 'Post must have a username '],
+		},
+
+		comments: {
+			type: Array,
+			required: false,
+		},
+
+		likes: {
+			type: Array,
+			required: false,
+		},
 	},
 	{ timestamps: true },
 );
+
+const Post = mongoose.model('Post', postSchema);
+module.exports = Post;
