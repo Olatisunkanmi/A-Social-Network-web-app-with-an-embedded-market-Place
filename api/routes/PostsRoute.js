@@ -1,14 +1,11 @@
 const router = require('express').Router();
 const PostController = require('../Controllers/PostController');
+const { auth } = require('../miiddleware/auth');
 
 router
 	.route('/')
 	.get(PostController.getAllPosts)
-	.post(PostController.createPosts);
+	.post(auth, PostController.createPosts);
 
-router
-	.route('/:id')
-	.get(PostController.getsingleposts)
-	.delete(PostController.deletepost)
-	.patch(PostController.updateposts);
+router.route('/:id').delete(PostController.deletePost);
 module.exports = router;
