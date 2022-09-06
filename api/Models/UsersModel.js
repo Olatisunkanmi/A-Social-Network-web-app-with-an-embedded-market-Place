@@ -6,7 +6,7 @@ const UserSchema = new mongoose.Schema({
 		required: [true, 'A user must have a name'],
 		unique: true,
 	},
-	passwor: {
+	password: {
 		type: String,
 		required: [true, ' User must have a password'],
 	},
@@ -22,18 +22,10 @@ const UserSchema = new mongoose.Schema({
 		type: Number,
 		default: 0,
 	},
-	// friends: [
-	// 	{
-	// 		type: Schema.Type.ObjectId,
-	// 		ref: 'User',
-	// 	},
-	// ],
-	// Products: [
-	// 	{
-	// 		type: Schema.Type.ObjectId,
-	// 		ref: 'Products',
-	// 	},
-	// ],
+	profilePicture: {
+		type: String,
+		default: '',
+	},
 });
 
 const User = mongoose.model('User', UserSchema);
