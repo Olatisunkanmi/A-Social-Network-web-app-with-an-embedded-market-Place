@@ -6,9 +6,7 @@ require('dotenv').config({ path: './config.env' });
 
 const DB = process.env.DATABASE;
 
-mongoose
-	.connect(process.env.DATABASE)
-	.then(console.log('Mongo Connected'));
+mongoose.connect(DB).then(console.log('Mongo Connected'));
 
 // 	------------------- PORT CONNECTION
 const port = process.env.Port || 2000;
