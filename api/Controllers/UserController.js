@@ -1,7 +1,5 @@
 const User = require('../Models/UsersModel');
-// 	-------------CREATinig Second APi ---User
-
-// !  CREATE MIDDLEWARE TO CHECK FOR :ID
+const Post = require('../Models/UsersModel');
 
 // 			---------Get all User ?
 exports.getAllUsers = async (req, res) => {
