@@ -1,4 +1,4 @@
-# A FULL-Stack Social Media Web-app.
+# A Social Network web-app with an embedded market Place
 
 Stack;
   React.JS frontend.
